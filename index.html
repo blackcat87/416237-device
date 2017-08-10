@@ -1,22 +1,191 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-    <description>Главная страница сайта Device. Подготовлена в рамках интенсивного курса "Базовый HTML и CSS"</description>
-    <keywords></keywords>
-    <link href="style.css" rel="stylesheet">
-  <body>
 
-    <header> 
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+  <meta name="description" content="Главная страница сайта Device. Подготовлена в рамках интенсивного курса Базовый HTML и CSS"
+  />
+  <meta name="keywords" content="HTMLAcademy" />
+  <link href="./css/style.css" rel="stylesheet">
+</head>
 
-    </header>
-    <main>
+<body>
+  <!--Шапка сайта-->
+  <header class="header-main">
+    <div class="main-logo"> <a href=""><img src="./img/logo.svg" width="160" height="35" alt="Интернет-магазин Device"></a></div>
+    <nav class="header-user-menu">
+      <div class="header-search">
+        <form></form>
+      </div>
+      <ul calss="header-user-navigation">
+        <li class="login-link"><a href="/login.html">Войти</a></li>
+        <li class="compare"><a href="/compare.html">Сравнить</a></li>
+        <li class="cart"><a href="/cart.hml">Корзина</a></li>
+      </ul>
+    </nav>
+    <nav class="main-menu">
+      <ul calss="catalog-navigation">
+        <li class="catalog"><a href="/catalog.html"> Каталог</a>
+          <ul class="category">
+            <li><a href="/virtual-glasses.hml"> Виртуальная реальность</a></li>
+            <li><a href="/monopods-for-selfie.hml"> Моноподы для селфи</a></li>
+            <li><a href="/action-camera.hml"> Экшн-камеры</a></li>
+            <li><a href="/fitness-bracelets.hml"> Фитнес-браслеты</a></li>
+            <li><a href="/smart-watch.hml"> Умные часы</a></li>
+            <li><a href="/quadrocopters.hml"> Квадрокоптеры</a></li>
+          </ul>
+        </li>
+        <li class="dostavka"><a href="/dostavka.html"> Доставка</a> </li>
+        <li class="garantiya"><a href="/garantiya.html"> Гарантия</a> </li>
+        <li class="contacts"><a href="/contacts.html"> Контакты</a> </li>
+      </ul>
+    </nav>
 
-    </main>
-    <footer> 
+  </header>
+  <!--Конец шапки-->
 
-    </footer>
+  <!--Блок основного контента-->
+  <main>
+    <!--Слайдер-->
 
-  </body>
+    <div class="header-slider">
+      <h1 class="visually-hidden">Интернет-магазин Девайс</h1>
+      <a href id="one" class="one"></a>
+      <a href id="two" class="two"></a>
+      <a href id="three" class="three"></a>
+
+
+      <section class="slider-one">
+        <div class="slider-images">
+          <a href="/monopods-for-selfie.hml">
+            <img src="./img/monopod.svg" alt="Моноподы для селфи" width="385" height="485"></a>
+        </div>
+        <div class="slider-text">
+          <h2>Делай селфи, как Бен Стиллер! </h2>
+          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+          </p>
+          <a href="/monopods-for-selfie.hml">Подробнее</a>
+          <!--здесь нужно добавить кнопки листания-->
+          <table class="slider-description">
+            <tr class="main-description">
+              <td>8.5 м</td>
+              <td>5 кг</td>
+              <td>Карбон</td>
+            </tr>
+            <tr class="more-description">
+              <td>Длина палки</td>
+              <td>Вес палки</td>
+              <td>Материал</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+
+      <section class="slider-two">
+        <!--добавляем новый слайдер после проверки первого-->
+      </section>
+      <section class="slider-trhee">
+        <!--добавляем новый слайдер после проверки первого-->
+      </section>
+
+    </div>
+    <!--Конец слайдера-->
+
+    <!--Иконка-меню-->
+    <nav class="icon-menu">
+      <ul class="icon-navigation">
+        <li>
+          <a href="/virtual-glasses.hml"><img src="./img/virtual-glasses.svg" alt="Виртуальная реальность" width="160" height="160">Виртуальная реальность</a>
+        </li>
+        <li>
+          <a href="/monopods-for-selfie.hml"><img src="./img/monopods-for-selfie.svg" alt="Моноподы для селфи" width="160" height="160">Моноподы для селфи</a>
+        </li>
+        <li>
+          <a href="/action-camera.hml"><img src="./img/action-camera.svg" alt="Экшн-камеры" width="160" height="160">Экшн-камеры</a>
+        </li>
+        <li>
+          <a href="/fitness-bracelets.hml"><img src="./img/fitness-bracelets.svg" alt="Фитнес-браслеты" width="160" height="160">Фитнес-браслеты</a>
+        </li>
+        <li>
+          <a href="/smart-watch.hml"><img src="./img/smart-watch.svg" alt="Умные часы" width="160" height="160">Умные часы</a>
+        </li>
+        <li>
+          <a href="/quadrocopters.hml"><img src="./img/quadrocopters.svg" alt="Квадрокоптеры" width="160" height="160">Квадрокоптеры</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Конец иконка-меню-->
+
+    <!--Информационный слайдер-->
+
+
+    <!--Конец информационного слайдера-->
+
+
+    <!--Наши бренды-->
+    <section class="our-brends">
+      <h2 class="visually-hidden">Наши бренды</h2>
+      <table class="brends">
+        <tr>
+          <!--Вставим width и height уже по факту выризания из PSD, т.к. они все разные-->
+          <td><img src="./img/logo-dgi.svg" alt="Логотип DJI" width="" height=""></td>
+          <td><img src="./img/logo-sp-gadgets.svg" alt="Логотип SP Gadgets" width="" height=""></td>
+          <td><img src="./img/logo-gopro.svg" alt="Логотип GoPro" width="" height=""></td>
+          <td><img src="./img/logo-vive.svg" alt="Логотип Vive" width="" height=""></td>
+        </tr>
+      </table>
+    </section>
+    <!--Конец блока наши клиенты-->
+
+    <!--О нас-->
+    <!--Конец блока о нас-->
+
+  </main>
+  <!--Конец блока основного контента-->
+
+  <!--Футер-->
+  <footer class="footer-page">
+
+    <section class="footer-info">
+      <div class="footer-logo"> <a href=""><img src="./img/logo.svg" width="160" height="35" alt="Интернет-магазин Device"></a></div>
+      <p>г. Москва, ул. Строителей, 15</p>
+      <img src="/img/footer-line.svg" width="" height="" alt="">
+    </section>
+
+    <section class="footer-menu">
+      <nav class="footer-main-menu">
+        <ul calss="footer-main-navigation">
+          <li><a href="/dostavka.html"> Доставка</a> </li>
+          <li><a href="/garantiya.html"> Гарантия</a> </li>
+          <li><a href="/contacts.html"> Контакты</a> </li>
+        </ul>
+
+      </nav>
+      <nav class="footer-social-menu">
+        <ul calss="footer-social-navigation">
+          <li><a href="http://facebook.com"><img src="/img/facebook.svg" alt="Facebook" width="" height=""> </a> </li>
+          <li><a href="http://instagram.com"><img src="/img/instagram.svg" alt="Instagram" width="" height=""> </a> </li>
+          <li><a href="http://vk.com"><img src="/img/vk.svg" alt="Вконтакте" width="" height=""> </a> </li>
+        </ul>
+
+      </nav>
+    </section>
+
+    <section class="footer-user-info">
+      <nav class="footer-user-menu">
+        <ul calss="footer-user-navigation">
+          <li class="footer-login-link"><a href="/login.html">Войти</a></li>
+          <li class="footer-compare"><a href="/compare.html">Сравнить</a></li>
+          <li class="footer-cart"><a href="/cart.hml">Корзина</a></li>
+        </ul>
+      </nav>
+      <p>Тел.: +7 (495) 495-95-95</p>
+      <a href="http://htmlacademy.ru"><img src="/img/copyright.svg" width="" height="" alt="copyright"></a>
+    </section>
+  </footer>
+  <!--Конец футера-->
+</body>
+
 </html>
