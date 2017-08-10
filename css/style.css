@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100%;
+}
+
+*,
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font: 14px Gilroy, Open-Sans, sans-serif;
+  background: #fff url(../images/bg.jpg) no-repeat center 0;
+  height: 100%;
+  color: #4e4e4e;
+  min-width: 1200px;
+}
+
+img {
+  border: 0px;
+  display: block;
+}
