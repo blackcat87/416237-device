@@ -185,13 +185,7 @@ main { }
 }
 
 .services__button label {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 0 3px;
-  
-  background-color: #cccccc;
-  cursor: pointer;
+
 }
 
 .services__slider-inner {

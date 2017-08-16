@@ -7,20 +7,21 @@
   <meta name="description" content="Главная страница сайта Device. Подготовлена в рамках интенсивного курса Базовый HTML и CSS"
   />
   <meta name="keywords" content="HTMLAcademy" />
+  <link href="./css/normalize.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <!--Шапка сайта-->
   <header>
-    <a class="header-logo" href=""><img src="./img/logo.svg" width="160" height="35" alt="Интернет-магазин Device"></a>
+    <a class="header-logo" href=""><img src="./img/svg/logo.svg" width="160" height="35" alt="Интернет-магазин Device"></a>
     <nav class="header-user-menu">
       <div class="header-search">
 
         <form action="result.html" method="post" class="search">
+          <img src="./img/svg/search.svg">
           <input type="search" placeholder="Поиск на сайте" required>
-          <button type="submit"><img src="./img/search.svg" alt="Поиск"/></button>
-          <!-- Может здесь лучше написать так??? - <input type="image" src="./img/lupa.png" alt="Поиск">-->
+          <input type="submit" value="Найти">
         </form>
 
       </div>
@@ -32,7 +33,7 @@
     </nav>
     <nav class="main-menu">
       <ul class="catalog-navigation">
-        <li class="catalog"><a href="catalog.html"> Каталог</a>
+        <li class="catalog"><a href="catalog.html"> Каталог товаров</a>
           <ul class="category">
             <li><a href="virtual-glasses.html"> Виртуальная реальность</a></li>
             <li><a href="monopods-for-selfie.html"> Моноподы для селфи</a></li>
@@ -69,7 +70,7 @@
 
         <div class="slider-inner">
           <div class="header-slider__slides">
-
+            <span class="slider-number"> 02</span>
             <article>
               <h2>Делай селфи, как Бен Стиллер! </h2>
               <a class="slider-images" href="monopods-for-selfie.html">
@@ -95,7 +96,7 @@
 
 
             <article>
-
+              <span class="slider-number"> 02</span>
               <h2>Худеем правильно! </h2>
 
               <a class="slider-images" href="fitness-bracelets.html">
@@ -118,6 +119,7 @@
 
 
             <article>
+              <span class="slider-number"> 03</span>
               <h2>Порхает как бабочка,жалит как пчела! </h2>
               <a class="slider-images" href="quadrocopters.html">
             <img src="./img/slider-3.png" alt="Квадрокоптер" width="526" height="334"></a>
@@ -151,22 +153,22 @@
       <h2 class="visually-hidden">Каталог продукции</h2>
       <ul class="icon-navigation">
         <li>
-          <a href="virtual-glasses.html"><img src="./img/virtual-glasses.svg" alt="Виртуальная реальность" width="160" height="160">Виртуальная реальность</a>
+          <a href="virtual-glasses.html"><img src="./img/svg/virtual-glasses.svg" alt="Виртуальная реальность" width="160" height="160">Виртуальная реальность</a>
         </li>
         <li>
-          <a href="monopods-for-selfie.html"><img src="./img/monopods-for-selfie.svg" alt="Моноподы для селфи" width="160" height="160">Моноподы для селфи</a>
+          <a href="monopods-for-selfie.html"><img src="./img/svg/monopods-for-selfie.svg" alt="Моноподы для селфи" width="160" height="160">Моноподы для селфи</a>
         </li>
         <li>
-          <a href="action-camera.html"><img src="./img/action-camera.svg" alt="Экшн-камеры" width="160" height="160">Экшн-камеры</a>
+          <a href="action-camera.html"><img src="./img/svg/action-camera.svg" alt="Экшн-камеры" width="160" height="160">Экшн-камеры</a>
         </li>
         <li>
-          <a href="fitness-bracelets.html"><img src="./img/fitness-bracelets.svg" alt="Фитнес-браслеты" width="160" height="160">Фитнес-браслеты</a>
+          <a href="fitness-bracelets.html"><img src="./img/svg/fitness-bracelets.svg" alt="Фитнес-браслеты" width="160" height="160">Фитнес-браслеты</a>
         </li>
         <li>
-          <a href="smart-watch.html"><img src="./img/smart-watch.svg" alt="Умные часы" width="160" height="160">Умные часы</a>
+          <a href="smart-watch.html"><img src="./img/svg/smart-watch.svg" alt="Умные часы" width="160" height="160">Умные часы</a>
         </li>
         <li>
-          <a href="quadrocopters.html"><img src="./img/quadrocopters.svg" alt="Квадрокоптеры" width="160" height="160">Квадрокоптеры</a>
+          <a href="quadrocopters.html"><img src="./img/svg/quadrocopters.svg" alt="Квадрокоптеры" width="160" height="160">Квадрокоптеры</a>
         </li>
       </ul>
     </nav>
@@ -179,35 +181,35 @@
 
       <div class="services__button">
         <ul>
-          <li><input type="button" id="delivery" value="delivery"><label for="delivery">Доставка</label></li>
-          <li><input type="button" id="warranty" value="warranty"><label for="warranty">Гарантия</label></li>
-          <li><input type="button" id="credit" value="credit"><label for="credit">Кредит</label></li>
+          <li><label for="delivery">Доставка </label></li>
+          <li><label for="warranty">Гарантия </label></li>
+          <li><label for="credit">Кредит </label></li>
         </ul>
       </div>
 
       <div class="services__slider-inner">
         <div class="services__slides">
 
-          <article>
+          <article id="delivery">
             <h3>Доставка </h3>
 
-            <img src="./img/delivery.png" alt="Доставка" width="136" height="164">
+            <img src="./img/svg/delivery.svg" alt="Доставка" width="136" height="164">
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
               поднимая его на ваш этаж.
             </p>
           </article>
 
-          <article>
+          <article id="warranty">
             <h3>Гарантия </h3>
-            <img src="./img/warranty.png" alt="Гарантия" width="171" height="194">
+            <img src="./img/svg/warranty.svg" alt="Гарантия" width="171" height="194">
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар,
               не дом, конечно же.
             </p>
           </article>
 
-          <article>
+          <article id="credit">
             <h3>Кредит </h3>
-            <img src="./img/credit.png" alt="Крудит" width="156" height="186">
+            <img src="./img/svg/credit.svg" alt="Крудит" width="156" height="186">
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
               Выгодные для нашего банка, разумеется.
             </p>
@@ -228,10 +230,10 @@
       <table class="brends__logo">
         <tr>
           <!--Вставим width и height уже по факту выризания из PSD, т.к. они все разные-->
-          <td><img src="./img/logo-dgi.png" alt="Логотип DJI" width="260" height="100"></td>
-          <td><img src="./img/logo-sp-gadgets.png" alt="Логотип SP Gadgets" width="260" height="100"></td>
-          <td><img src="./img/logo-gopro.png" alt="Логотип GoPro" width="260" height="100"></td>
-          <td><img src="./img/logo-vive.png" alt="Логотип Vive" width="260" height="100"></td>
+          <td><img src="./img/logo-dgi.jpg" alt="Логотип DJI" width="260" height="100"></td>
+          <td><img src="./img/logo-sp-gadgets.jpg" alt="Логотип SP Gadgets" width="260" height="100"></td>
+          <td><img src="./img/logo-gopro.jpg" alt="Логотип GoPro" width="260" height="100"></td>
+          <td><img src="./img/logo-vive.jpg" alt="Логотип Vive" width="260" height="100"></td>
         </tr>
       </table>
     </section>
@@ -271,7 +273,7 @@
   <!--Футер-->
   <footer>
 
-    <a class="footer-logo" href="index.html"><img src="./img/logo.svg" width="160" height="35" alt="Интернет-магазин Device"></a>
+    <a class="footer-logo" href="index.html"><img src="./img/svg/logo-footer.svg" width="160" height="35" alt="Интернет-магазин Device"></a>
     <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
 
 
@@ -287,9 +289,9 @@
       </nav>
       <nav class="footer-menu__social">
         <ul>
-          <li><a href="http://facebook.com"><img src="./img/facebook.png" alt="Facebook" width="32" height="32"> </a> </li>
-          <li><a href="http://instagram.com"><img src="./img/instagram.png" alt="Instagram" width="32" height="32"> </a> </li>
-          <li><a href="http://twitter.com"><img src="./img/twitter.png" alt="Twitter" width="32" height="32"> </a> </li>
+          <li><a href="http://facebook.com"><img src="./img/svg/facebook.svg" alt="Facebook" width="32" height="32"> </a> </li>
+          <li><a href="http://instagram.com"><img src="./img/svg/instagram.svg" alt="Instagram" width="32" height="32"> </a>            </li>
+          <li><a href="http://twitter.com"><img src="./img/svg/twitter.svg" alt="Twitter" width="32" height="32"> </a> </li>
         </ul>
 
       </nav>
@@ -304,7 +306,7 @@
       </ul>
     </nav>
     <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
-    <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/copyright.png" width="27" height="35" alt="copyright"></a>
+    <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/svg/copyright.svg" width="27" height="35" alt="copyright"></a>
 
   </footer>
   <!--Конец футера-->
@@ -315,7 +317,7 @@
     <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
       <label>Ваше имя <input type="text" name="name" placeholder="Представьтесь, пожалуйста"></label>
       <label>Ваш e-mail<input type="text" name="e-mail" placeholder="Для отправки ответа"></label>
-      <label>Текст письма <textarea name="text" rows="10" cols="300" placeholder="В свободной форме"></textarea></label>
+      <label>Текст письма <textarea name="text" rows="10" cols="100" placeholder="В свободной форме"></textarea></label>
       <button class="button" type="submit">Отправить</button>
     </form>
     <span class="modal-close">x</span>
