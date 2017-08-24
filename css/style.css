@@ -9,48 +9,21 @@ html,
 body {
   min-width: 1200px;
   height: 100%;
-  font-size: 100%;
+  font-size: 15px;
   background-color: #fff;
   font-family: "Gilroy", "Open-Sans", sans-serif;
-  color: grey;
+  color:#464646;
+  line-height:30px;
+  letter-spacing: 1px;
 }
 
-*,
-html,
-body,
-header,
-footer,
-main,
-section,
-article,
-nuv,
-aside,
-time,
-figure,
-figcaption,
-video,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
-fieldset,
-input,
-textarea,
-p,
-blockquote,
-th,
-td {
+h1 {font-size: 47px; color:black; font-style:bold;}
+
+h2 {font-size: 47px; color:black}
+
+h3 {font-size: 18px; color:black}
+
+*{
   margin: 0;
   padding: 0;
 }
@@ -138,7 +111,7 @@ main { }
 }
 
 .header-slider__slides article h2 {
-  font: bold 47px Gilroy sans-serif;
+  
   margin-left: 400px;
 }
 
@@ -211,9 +184,9 @@ main { }
 }
 
 .services__slides article h3 {
-  font: bold 47px Gilroy sans-serif;
+  
   margin-bottom: 20px;
-  color:black;
+
 
 }
 #delivery:checked~.services__button label[for="delivery"],

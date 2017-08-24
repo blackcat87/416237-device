@@ -75,16 +75,16 @@
           <legend>Цвет</legend>
           <ul>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black" checked>              <label for="black">  Черный</label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black" checked>  <label for="black">  Черный</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="white">              <label for="white">   Белый</label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="white">   <label for="white">   Белый</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>              <label for="blue">  Синий</label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>   <label for="blue">  Синий</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red" checked>              <label for="red">  Красный</label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red" checked>   <label for="red">  Красный</label>
             </li>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="yes" name="pink">
@@ -97,14 +97,14 @@
           <legend>Bluetooth </legend>
           <ul>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="yes" checked>              <label for="yes">        Есть</label>
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="yes" checked>  <label for="yes">        Есть</label>
             </li>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no" id="no">              <label for="yes">Нет</label>
             </li>
           </ul>
         </fieldset>
-        <button type="submit" class="filter-button button">Показать</button>
+        <button class="filter-button button">Показать</button>
       </form>
 
     </section>
@@ -116,11 +116,11 @@
       <nav class="catalog-menu">
         <ul>
           <li>Сортировка:</li>
-          <li>По цене</li>
-          <li>По типу</li>
-          <li>По популярности</li>
-          <li><img src="./img/svg/icon-down-dir.svg" alt="Стрелка вниз"></li>
-          <li><img src="./img/svg/icon-up-dir.svg" alt="Стрелка вверх"></li>
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По популярности</a></li>
+          <li><a href="#"><img src="./img/svg/icon-down-dir.svg" alt="Стрелка вниз"></a></li>
+          <li><a href="#"><a href="#">img src="./img/svg/icon-up-dir.svg" alt="Стрелка вверх"></a></li>
         </ul>
       </nav>
 
@@ -161,20 +161,22 @@
       <!--КОНЕЦ: Каталог товаров-->
 
       <!--Пагинация на странице-->
-      <div class="pagination">
-        <div class="prev"><a href="#">Предыдущая</a></div>
+      <section class="pagination">
+        <h2 class="visually-hidden">Пагинация по каталогу</h2>
+        <button class="prev"><a href="#">Предыдущая</a></button>
 
         <!-- страницы -->
-        <div><a href="#">1</a></div>
+        <ul>
+          <li><a href="#">1</a></li>
 
-        <!-- текущая страница -->
-        <div><a class="active" href="#">2</a></div>
+          <!-- текущая страница -->
+          <li class="active"><a href="#">2</a></li>
 
-        <!-- страницы -->
-        <div><a href="#">3</a></div>
+          <!-- страницы -->
+          <li><a href="#">3</a></li>
 
-        <div class="next"><a href="#">Следующая</a></div>
-      </div>
+          <button class="next"><a href="#">Следующая</a></button>
+      </section>
       <!--КОНЕЦ: Пагинация на странице-->
     </section>
   </main>
