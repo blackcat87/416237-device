@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <meta name="description" content="Главная страница сайта Device. Подготовлена в рамках интенсивного курса Базовый HTML и CSS"
-  />
+  <meta name="description" content="Главная страница сайта Device. Подготовлена в рамках интенсивного курса Базовый HTML и CSS"  />
   <meta name="keywords" content="HTMLAcademy" />
+  <link href="./css/normalize.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
 </head>
 
@@ -75,20 +75,24 @@
           <legend>Цвет</legend>
           <ul>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black" checked>  <label for="black">  Черный</label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black" checked>              
+              <label for="black">Черный</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="white">   <label for="white">   Белый</label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="white">              
+              <label for="white">Белый</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>   <label for="blue">  Синий</label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>              
+              <label for="blue">Синий</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red" checked>   <label for="red">  Красный</label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red" checked> 
+              <label for="red">Красный</label>
             </li>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="yes" name="pink">
-              <label for="pink"> Розовый</label>
+              <label for="pink">Розовый</label>
             </li>
           </ul>
         </fieldset>
@@ -97,10 +101,12 @@
           <legend>Bluetooth </legend>
           <ul>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="yes" checked>  <label for="yes">        Есть</label>
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="yes" checked>              
+              <label for="yes">Есть</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no" id="no">              <label for="yes">Нет</label>
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no" id="no">              
+              <label for="yes">Нет</label>
             </li>
           </ul>
         </fieldset>
@@ -119,8 +125,8 @@
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По популярности</a></li>
-          <li><a href="#"><img src="./img/svg/icon-down-dir.svg" alt="Стрелка вниз"></a></li>
-          <li><a href="#"><a href="#">img src="./img/svg/icon-up-dir.svg" alt="Стрелка вверх"></a></li>
+          <li><button class="button-down"><img src="./img/svg/icon-down-dir.svg" alt="Стрелка вниз"></button></li>
+          <li><button class="button-up"><img src="./img/svg/icon-up-dir.svg" alt="Стрелка вверх"></button></li>
         </ul>
       </nav>
 
