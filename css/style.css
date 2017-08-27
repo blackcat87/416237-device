@@ -4,14 +4,14 @@
   font-weight: 400;
   font-family: "Gilroy";
   font-style: normal;
-  src: url("./fonts/gilroylight.woff") format("woff"), url("./fonts/gilroylight.woff2") format("woff2");
+  src: url("../fonts/gilroylight.woff") format("woff"), url("../fonts/gilroylight.woff2") format("woff2");
 }
 
 @font-face {
   font-weight: 700;
   font-family: "Gilroy";
   font-style: normal;
-  src: url("./fonts/gilroyextrabold.woff") format("woff"), url("./fonts/gilroyextrabold.woff2") format("woff2");
+  src: url("../fonts/gilroyextrabold.woff") format("woff"), url("../fonts/gilroyextrabold.woff2") format("woff2");
 }
 
 
@@ -21,17 +21,21 @@
   font-weight: 300;
   font-family: "Open Sans";
   font-style: normal;
-  src: url("/fonts/opensanslight.woff") format("woff"), url("./fonts/opensanslight.woff2") format("woff2");
+  src: url("../fonts/opensanslight.woff") format("woff"), url("../fonts/opensanslight.woff2") format("woff2");
 }
 
 @font-face {
   font-weight: 400;
   font-family: "Open Sans";
   font-style: normal;
-  src: url("./fonts/opensans.woff") format("woff"), url("./fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
 }
 
-html,
+
+
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
 body {
   margin: 0;
   padding: 0;
@@ -51,18 +55,6 @@ a {
   color: black;
 }
 
-h1 {
-  font-family: "Gilroy", sans-serif;
-  font-weight: 700;
-  font-size: 47px;
-  color: black;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 img {
   border: 0px;
   display: block;
@@ -79,14 +71,24 @@ img {
   width: 1px;
 }
 
-.button {color: #000000;
-font-family: Gilroy;
-font-size: 18px;
-font-weight: 700;
-text-transform: uppercase;}
+.conteiner {
+  margin-right: auto;
+  margin-left: auto;
+  width:1160px;
+}
 
-.button a:hover{}
-.button a:focus{}
+.button {
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button a:hover {}
+
+.button a:focus {}
+
 
 /* Header */
 
@@ -368,10 +370,20 @@ header {
   color: black;
   font-size: 47px;
 }
-.about-us {width: 462px; }
-.about-us p {letter-spacing: 0;}
 
-.contacts {width: 560px; margin-left:139px; }
+.about-us {
+  width: 462px;
+}
+
+.about-us p {
+  letter-spacing: 0;
+}
+
+.contacts {
+  width: 560px;
+  margin-left: 139px;
+}
+
 .contacts h2 {
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
@@ -379,7 +391,10 @@ header {
   font-size: 47px;
 }
 
-.contacts p {letter-spacing: 0;}
+.contacts p {
+  letter-spacing: 0;
+}
+
 
 /* Footer */
 
