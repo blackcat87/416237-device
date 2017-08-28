@@ -76,7 +76,7 @@ img {
   width: 1px;
 }
 
-.conteiner {
+.container {
   margin-right: auto;
   margin-left: auto;
   width: 1160px;
@@ -94,37 +94,132 @@ img {
 
 .button a:focus {}
 
+ul {
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000;
+}
+
 
 /* Header */
 
 .header {
-  background-color: #f0c52e;
-  /*opacity: 0.5;*/
-  height: 299px;
+  background-color: rgba(247, 226, 150, 1);
+  height: 186px;
   margin-top: 40px;
+}
+
+.header-logo a {
+  display: block;
 }
 
 .header-logo img {
   position: relative;
   top: -19px;
   left: 59px;
+  width: 164px;
+  height: 36px;
+}
+
+.header-logo img:hover {
+  opacity: 0.6;
+}
+
+.header-logo img:active {
+  opacity: 0.3;
 }
 
 .header-search {
+  display: flex;
+  width: 441px;
+  height: 49px;
   line-height: 36px;
-  opacity: 0.3;
   text-align: left;
+  padding-left: 4px;
+  margin-left: 59px;
+  color: #000000;
+}
+
+.header-search svg {
+  display: block;
+}
+
+.search-icon {
+  padding-right: 21px;
+  padding-top: 17px;
+  height: 100px;
+}
+
+.search-input:focus~.search-icon {
+  border-bottom: 2px solid black;
+}
+
+.search-input {
+  border: 0;
+  background-color: transparent;
+  width: 315px;
+  outline: none;
+  order: 5;
+  opacity: 0.3;
+}
+
+.search-input:hover {
+  opacity: 0.6;
+}
+
+.search-input:focus {
+  border-bottom: 2px solid black;
+  opacity: 1;
+}
+
+.search-input:focus+.search-btn {
+  border: 2px solid black;
+  visibility: visible;
+}
+
+.search-btn {
+  width: 85px;
+  height: 49px;
+  border: 2px solid black;
+  background-color: transparent;
+  visibility: hidden;
+  order: 10;
+}
+
+.search-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.search-btn:active {
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.3);
+  visibility: visible;
+  outline: none;
 }
 
 .header-user-menu {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .header-user-navigation {
   list-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  color: #000;
   line-height: 36px;
   display: flex;
-  text-align: right;
+  margin-left: 59px;
+  width: 560px;
+  height: 15px;
+}
+
+.header-user-navigation a {
+  margin-left: 12px;
 }
 
 .header-user-navigation a:focus {
@@ -135,6 +230,45 @@ img {
   opacity: 0.3;
 }
 
+.login-link {
+  width: 287px;
+}
+
+.login-link::before {
+  content: "";
+  background-image: url('../img/svg/user.svg');
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 12px;
+  display: inline-block;
+}
+
+.compare {
+  width: 130px;
+}
+
+.compare::before {
+  content: "";
+  background-image: url('../img/svg/compare.svg');
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+
+.cart {
+  width: 143px;
+}
+
+.cart::before {
+  content: "";
+  background-image: url('../img/svg/cart.svg');
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+}
+
 .catalog-navigation {
   list-style: none;
   display: flex;
@@ -143,14 +277,43 @@ img {
   letter-spacing: 0.2em;
   font-size: 18px;
   text-transform: uppercase;
+  height: 16px;
+  padding: 0;
 }
 
-.catalog-navigation a:focus {
-  opacity: 0.6;
+.catalog-navigation a:active {
+  opacity: 0.3;
 }
 
 .catalog-navigation a:hover {
-  opacity: 0.3;
+  opacity: 0.6;
+}
+
+.catalog-item {
+  width: 540px;
+  margin-left: 60px;
+}
+
+.plus-icon::after {
+  content: "";
+  display: inline-block;
+  background-image: url('../img/svg/plus.svg');
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+}
+
+.delivery-item {
+  width: 159px;
+}
+
+.warranty-item {
+  width: 223px;
+}
+
+.contacts-item {
+  width: 178px;
 }
 
 .category {
@@ -161,17 +324,93 @@ img {
   letter-spacing: 0.01em;
   font-size: 15px;
   text-transform: none;
+  display: none;
 }
 
 
-/* Main */
+/* Каталог */
+
+.catalog {
+  padding-left: 61px;
+}
+
+.catalog h1 {
+  font-family: "Gilroy", sans-serif;
+  font-size: 47px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  opacity: 0.3;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+.breadcrumbs li::after {
+  content: "";
+  background-image: url('../img/svg/nav-arrow.svg');
+  background-repeat: no-repeat;
+  width: 4px;
+  height: 7px;
+  display: inline-block;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.catalog-list h3 {
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.catalog-item-price {
+  color: #464646;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+.add-to-сompare {
+  opacity: 0.5;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  text-transform: none;
+}
 
 
 /*Слайдер в шапке*/
 
 .header-slider {
-  width: 1160px;
+  height: 777px;
   margin: 0px;
+}
+
+.header-background {
+  background-color: rgba(247, 226, 150, 1);
+  height: 113px;
+}
+
+.header-background img {
+  margin-left: 600px;
 }
 
 .header-slider__button {
@@ -183,8 +422,9 @@ img {
 }
 
 .header-slider__button_controls {
-  margin-bottom: 100px;
-  text-align: right;
+  position: absolute;
+  left: 996px;
+  top: 206px;
 }
 
 .header-slider__button_controls label {
@@ -207,12 +447,15 @@ img {
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
   color: black;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.01em;
   font-size: 47px;
   margin-left: 599px;
 }
 
 .slider-number {
+  position: absolute;
+  top: -125px;
+  left: 928px;
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
   color: white;
@@ -282,7 +525,7 @@ img {
 }
 
 .slider-description td {
-  padding: 10px 40px 10px 0;
+  padding: 10px 80px 10px 0;
 }
 
 
@@ -291,13 +534,40 @@ img {
 .icon-navigation {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
   color: black;
   font-size: 18px;
+  padding: 0;
 }
 
-.icon-navigation a:hover {
+.icon-navigation li {
+  display: block;
+  width: 160px;
+  height: 236px;
+}
+
+.icon-navigation a:active {
+  opacity: 0.3;
+}
+
+.icon-menu-btn {
+  background-color: rgba(240, 197, 46, 0.5);
+  width: 160px;
+  height: 160px;
+}
+
+.icon-menu-btn:hover {
+  background-color: rgba(240, 197, 46, 1)
+}
+
+.icon-menu-btn:active {
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.icon-menu-btn:active svg {
+  margin: auto;
   opacity: 0.3;
 }
 
@@ -388,8 +658,22 @@ img {
   display: flex;
 }
 
+.brends__logo img {
+  filter: grayscale(1);
+  opacity: 0.2;
+}
+
+.brends__logo img:hover {
+  filter: none;
+  opacity: 1;
+}
+
 
 /*О нас*/
+
+.about {
+  display: flex;
+}
 
 .about-us h2 {
   font-family: "Gilroy", sans-serif;
@@ -428,10 +712,122 @@ img {
 footer {
   background-color: #464646;
   width: 100%;
+  height: 323px;
 }
 
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-/*хлебные крошки*/
+.footer-contacts {
+  width: 367px;
+  border: #f1f;
+}
+
+.footer-menu {
+  float: left;
+  width: 468px;
+}
+
+.footer-left {
+  float: left;
+  width: 325px;
+}
+
+.footer-logo a {
+  display: block;
+}
+
+.footer-logo img {
+  position: relative;
+  top: 65px;
+  width: 163px;
+  height: 36px;
+}
+
+.footer-logo img:hover {
+  opacity: 0.6;
+}
+
+.footer-logo img:active {
+  opacity: 0.3;
+}
+
+.footer-adress {
+  color: white;
+  margin-top: 140px;
+}
+
+.footer-menu__services_list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.footer-menu__services_list li {
+  padding-right: 38px;
+}
+
+.footer-menu__services_list a {
+  color: #fff;
+}
+
+.footer-menu__services_list a:hover {
+  opacity: 0.6;
+}
+
+.footer-menu__services_list a:active {
+  opacity: 0.3;
+}
+
+.footer-menu__social_list {
+  list-style: none;
+  display: flex;
+}
+
+.social-btn {
+  opacity: 0.3;
+}
+
+.social-btn:hover {
+  opacity: 0.6;
+}
+
+.social-btn:active {
+  opacity: 0.1;
+}
+
+.footer-menu__user_list {
+  display: flex;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 36px;
+  width: 125px;
+  height: 15px;
+  padding: 0;
+}
+
+.footer-menu__user_list a {
+  margin-left: 12px;
+  color: #fff;
+}
+
+.footer-menu__user_list a:focus {
+  opacity: 0.7;
+}
+
+.footer-menu__user_list a:hover {
+  opacity: 0.3;
+}
 
 
 /*фильтр*/

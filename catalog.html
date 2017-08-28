@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <meta name="description" content="Главная страница сайта Device. Подготовлена в рамках интенсивного курса Базовый HTML и CSS"  />
+  <meta name="description" content="Главная страница сайта Device. Подготовлена в рамках интенсивного курса Базовый HTML и CSS"
+  />
   <meta name="keywords" content="HTMLAcademy" />
   <link href="./css/normalize.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
@@ -12,17 +13,22 @@
 
 <body>
   <!--Шапка сайта-->
-  <header>
-    <a class="header-logo" href=""><img src="./img/svg/logo.svg" width="160" height="35" alt="Интернет-магазин Device"></a>
+  <header class="header container">
+    <a class="header-logo" href="/index.html"><img src="./img/logo.png" width="164" height="36" alt="Интернет-магазин Device"></a>
     <nav class="header-user-menu">
-      <div class="header-search">
 
-        <form action="result.html" method="post" class="search">
-          <img src="./img/svg/search.svg">
-          <input type="search" placeholder="Поиск на сайте" required>
-          <input type="submit" value="Найти">
-        </form>
-      </div>
+      <form class="header-search" action="result.html" method="post" class="search">
+
+        <input class="search-input" type="search" placeholder="Поиск на сайте" required>
+        <input class="search-btn" type="submit" value="Найти">
+        <div class="search-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+            <path d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z"
+            />
+          </svg>
+        </div>
+      </form>
+
       <ul class="header-user-navigation">
         <li class="login-link"><a href="login.html">Валентин Петухов</a></li>
         <li class="link-out"><a href="index.html">Выйти</a></li>
@@ -32,7 +38,7 @@
     </nav>
     <nav class="main-menu">
       <ul class="catalog-navigation">
-        <li class="catalog"><a href="catalog.html"> Каталог</a>
+        <li class="catalog-item"><a class="plus-icon" href="catalog.html"> Каталог товаров</a>
           <ul class="category">
             <li><a href="virtual-glasses.html"> Виртуальная реальность</a></li>
             <li><a href="monopods-for-selfie.html"> Моноподы для селфи</a></li>
@@ -42,9 +48,9 @@
             <li><a href="quadrocopters.html"> Квадрокоптеры</a></li>
           </ul>
         </li>
-        <li class="dostavka"><a href="dostavka.html"> Доставка</a> </li>
-        <li class="garantiya"><a href="garantiya.html"> Гарантия</a> </li>
-        <li class="contacts"><a href="contacts.html"> Контакты</a> </li>
+        <li class="delivery-item"><a href="dostavka.html"> Доставка</a> </li>
+        <li class="warranty-item"><a href="garantiya.html"> Гарантия</a> </li>
+        <li class="contacts-item"><a href="contacts.html"> Контакты</a> </li>
       </ul>
     </nav>
 
@@ -52,7 +58,8 @@
   <!--Конец шапки-->
 
   <!--Блок основного контента-->
-  <main>
+  <main class="catalog container">
+
     <h1>Моноподы для селфи </h1>
     <!--Хлебные крошки-->
     <ul class="breadcrumbs">
@@ -75,19 +82,19 @@
           <legend>Цвет</legend>
           <ul>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black" checked>              
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black" checked>
               <label for="black">Черный</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="white">              
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="white">
               <label for="white">Белый</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>              
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>
               <label for="blue">Синий</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red" checked> 
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red" checked>
               <label for="red">Красный</label>
             </li>
             <li class="filter-option">
@@ -101,11 +108,11 @@
           <legend>Bluetooth </legend>
           <ul>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="yes" checked>              
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="yes" checked>
               <label for="yes">Есть</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no" id="no">              
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no" id="no">
               <label for="yes">Нет</label>
             </li>
           </ul>
@@ -192,42 +199,48 @@
 
   <!--Футер-->
   <footer>
+    <div class="footer container">
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Наш Адрес</h2>
+        <a class="footer-logo" href="index.html"><img src="./img/logo-footer.png" width="163" height="36" alt="Интернет-магазин Device"></a>
+        <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
+        <img src="./img/line.png" alt="" width="80px" height="7px">
 
-    <a class="footer-logo" href="index.html"><img src="./img/svg/logo-footer.svg" width="160" height="35" alt="Интернет-магазин Device"></a>
-    <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
+      </section>
 
+      <section class="footer-menu">
+        <h2 class="visually-hidden">Наши услуги и контакты в соцсетях</h2>
+        <nav class="footer-menu__services">
+          <ul class="footer-menu__services_list">
+            <li><a href="dostavka.html"> Доставка</a> </li>
+            <li><a href="garantiya.html"> Гарантия</a> </li>
+            <li><a href="contacts.html"> Контакты</a> </li>
+          </ul>
 
+        </nav>
+        <nav class="footer-menu__social">
+          <ul class="footer-menu__social_list">
+            <li><a href="http://facebook.com"><img class="social-btn" src="./img/svg/facebook.svg" alt="Facebook" width="32" height="32"> </a>              </li>
+            <li><a href="http://instagram.com"><img class="social-btn" src="./img/svg/instagram.svg" alt="Instagram" width="32" height="32"> </a>              </li>
+            <li><a href="http://twitter.com"><img class="social-btn" src="./img/svg/twitter.svg" alt="Twitter" width="32" height="32"> </a>              </li>
+          </ul>
 
-    <div class="footer-menu">
-      <nav class="footer-menu__main">
-        <ul>
-          <li><a href="dostavka.html"> Доставка</a> </li>
-          <li><a href="garantiya.html"> Гарантия</a> </li>
-          <li><a href="contacts.html"> Контакты</a> </li>
-        </ul>
+        </nav>
+      </section>
 
-      </nav>
-      <nav class="footer-menu__social">
-        <ul>
-          <li><a href="http://facebook.com"><img src="./img/svg/facebook.svg" alt="Facebook" width="32" height="32"> </a> </li>
-          <li><a href="http://instagram.com"><img src="./img/svg/instagram.svg" alt="Instagram" width="32" height="32"> </a>            </li>
-          <li><a href="http://twitter.com"><img src="./img/svg/twitter.svg" alt="Twitter" width="32" height="32"> </a> </li>
-        </ul>
-
-      </nav>
+      <section class="footer-left">
+        <h2 class="visually-hidden">Личный кабинет</h2>
+        <nav class="footer-menu__user">
+          <ul class="footer-menu__user_list">
+            <li class="login-link"><a href="login.html">Войти</a></li>
+            <li class="compare"><a href="compare.html">Сравнить</a></li>
+            <li class="cart"><a href="cart.html">Корзина</a></li>
+          </ul>
+        </nav>
+        <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
+        <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/svg/copyright.svg" width="27" height="35" alt="copyright"></a>
+      </section>
     </div>
-
-
-    <nav class="footer-user__menu">
-      <ul>
-        <li class="footer-login-link"><a href="login.html">Войти</a></li>
-        <li class="footer-compare"><a href="compare.html">Сравнить</a></li>
-        <li class="footer-cart"><a href="cart.html">Корзина</a></li>
-      </ul>
-    </nav>
-    <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
-    <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/svg/copyright.svg" width="27" height="35" alt="copyright"></a>
-
   </footer>
   <!--Конец футера-->
 </body>
