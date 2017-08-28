@@ -146,8 +146,8 @@ ul {
 }
 
 .search-icon {
-  padding-right: 21px;
-  padding-top: 17px;
+  padding-right: 18px;
+  padding-top: 16px;
   height: 100px;
 }
 
@@ -162,6 +162,7 @@ ul {
   outline: none;
   order: 5;
   opacity: 0.3;
+  margin-top: -5px;
 }
 
 .search-input:hover {
@@ -214,8 +215,9 @@ ul {
   line-height: 36px;
   display: flex;
   margin-left: 59px;
-  width: 560px;
+  width: 598px;
   height: 15px;
+  margin-top: 4px;
 }
 
 .header-user-navigation a {
@@ -291,7 +293,7 @@ ul {
 
 .catalog-item {
   width: 540px;
-  margin-left: 60px;
+  margin-left: 58px;
 }
 
 .plus-icon::after {
@@ -301,7 +303,8 @@ ul {
   background-repeat: no-repeat;
   width: 16px;
   height: 16px;
-  margin-left: 16px;
+  margin-left: 12px;
+  vertical-align: middle;
 }
 
 .delivery-item {
@@ -317,6 +320,7 @@ ul {
 }
 
 .category {
+  
   list-style: none;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -325,6 +329,10 @@ ul {
   font-size: 15px;
   text-transform: none;
   display: none;
+  width: 1040px;
+  height: 156px;
+  padding: 0;
+  background-color: rgb(247, 226, 150);
 }
 
 
@@ -400,7 +408,7 @@ ul {
 /*Слайдер в шапке*/
 
 .header-slider {
-  height: 777px;
+  height: 576px;
   margin: 0px;
 }
 
@@ -475,11 +483,17 @@ ul {
   height: 485px;
 }
 
+.header-slider__slides article p {
+  margin-left: 599px;
+}
+
 .header-slider__slides article img {
   float: left;
   margin-right: 50px;
   margin-top: -50px;
 }
+
+.slider-btn {margin-left: 165px;}
 
 .slider-description {
   margin-left: 599px;
@@ -722,7 +736,6 @@ footer {
 
 .footer-contacts {
   width: 367px;
-  border: #f1f;
 }
 
 .footer-menu {
@@ -762,12 +775,13 @@ footer {
 .footer-menu__services_list {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   font-family: Gilroy;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  padding: 0;
+  justify-content: center;
 }
 
 .footer-menu__services_list li {
@@ -789,6 +803,12 @@ footer {
 .footer-menu__social_list {
   list-style: none;
   display: flex;
+  padding: 0;
+  justify-content: center;
+}
+
+.footer-menu__social_list li {
+  padding-right: 38px;
 }
 
 .social-btn {
