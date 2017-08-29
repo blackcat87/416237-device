@@ -47,8 +47,6 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   font-weight: 300;
-  line-height: 30px;
-  letter-spacing: 0.01em;
   color: #464646;
   min-width: 1160px;
   height: 100%;
@@ -87,6 +85,7 @@ img {
   font-family: Gilroy;
   font-size: 18px;
   font-weight: 700;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
@@ -94,7 +93,7 @@ img {
 
 .button a:focus {}
 
-ul {
+.list ul {
   font-family: "Gilroy", sans-serif;
   font-size: 16px;
   line-height: 40px;
@@ -203,6 +202,7 @@ ul {
 .header-user-menu {
   display: flex;
   flex-wrap: wrap;
+      margin-bottom: 30px;
 }
 
 .header-user-navigation {
@@ -320,7 +320,6 @@ ul {
 }
 
 .category {
-  
   list-style: none;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -426,13 +425,13 @@ ul {
 }
 
 .header-slider__button input[type=radio] {
-  display: none;
+ display: none;
 }
 
 .header-slider__button_controls {
-  position: absolute;
-  left: 996px;
-  top: 206px;
+ position: absolute;
+  left: 998px;
+  top: 214px;
 }
 
 .header-slider__button_controls label {
@@ -458,6 +457,7 @@ ul {
   letter-spacing: 0.01em;
   font-size: 47px;
   margin-left: 599px;
+  margin-bottom: 22px;
 }
 
 .slider-number {
@@ -481,19 +481,28 @@ ul {
   float: left;
   width: 1160px;
   height: 485px;
+      margin-top: -68px;
 }
 
 .header-slider__slides article p {
   margin-left: 599px;
+      margin-bottom: 50px;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.01em;
 }
 
 .header-slider__slides article img {
   float: left;
-  margin-right: 50px;
-  margin-top: -50px;
+  margin-left: 90px;
+  margin-top: -212px;
 }
 
-.slider-btn {margin-left: 165px;}
+.slider-btn {
+  margin-left: 165px;
+}
 
 .slider-description {
   margin-left: 599px;
@@ -504,11 +513,13 @@ ul {
   font-weight: 300;
   color: black;
   font-size: 36px;
+  letter-spacing: 0.01em;
 }
 
 .more-description {
   font-size: 13px;
   line-height: 20px;
+  letter-spacing: 0.01em;
 }
 
 #btn-1:checked~.header-slider__button_controls label[for="btn-1"],
@@ -553,8 +564,10 @@ ul {
   font-weight: 700;
   color: black;
   font-size: 18px;
+  letter-spacing: 0.01em;
   padding: 0;
   justify-content: space-between;
+  margin-bottom: 36px;
 }
 
 .icon-navigation li {
@@ -571,12 +584,12 @@ ul {
   background-color: rgba(240, 197, 46, 0.5);
   width: 160px;
   height: 160px;
-  display:flex;
-  margin:auto;
+  display: flex;
+  margin-bottom: 35px;
 }
 
-.icon-menu-btn img{
-  margin:auto;
+.icon-menu-btn img {
+  margin: auto;
 }
 
 .icon-menu-btn:hover {
@@ -588,7 +601,7 @@ ul {
 }
 
 .icon-menu-btn:active img {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 
@@ -596,18 +609,16 @@ ul {
 
 .services {
   width: 1160px;
-  margin: 40px auto;
+      margin: 86px auto 168px;
 }
 
 .services__button {
   position: relative;
-  float: left;
-  width: 300px;
   height: 315px;
-  border-right: 5px solid black;
+  display: flex;
 }
 
-.services__button input[type=button] {
+.services__button input[type=radio] {
   display: none;
 }
 
@@ -616,168 +627,147 @@ ul {
   font-weight: 700;
   color: #f7e184;
   font-size: 18px;
+  text-transform: uppercase;
   letter-spacing: 0.2em;
+  width: 284px;
+  border-right: 7px solid black;
+  padding-left: 20px;
+      padding-top: 91px;
 }
 
 .services__slider-inner {
   overflow: hidden;
+  width: 796px;
 }
 
+
+}
 .services__slides {
   width: 300%;
   transition: transform 0.8s ease;
 }
-
-.services__slides article {
+.services__slides {
   float: left;
   margin-left: 115px;
-  width: 785px;
+  width: 678px;
   height: 315px;
+  letter-spacing: 0.01em;
+  line-height: 30px;
 }
-
 .services__slides h3 {
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
   color: black;
   font-size: 47px;
+  margin-bottom: 20px;
 }
-
-.services__slides article img {
+.services__slides img {
   float: right;
   margin-right: 50px;
   margin-top: -50px;
 }
-
-.services__slides article h3 {
-  margin-bottom: 20px;
-}
-
 #delivery:checked~.services__button label[for="delivery"],
 #warranty:checked~.services__button label[for="warranty"],
 #credit:checked~.services__button label[for="credit"] {
   background-color: #666666;
 }
-
 #delivery:checked~.services__slider-inner .services__slides {
   transform: translate(0);
 }
-
 #warranty:checked~.services__slider-inner .services__slides {
-  transform: translate(-785px);
+  transform: translate(-678px);
 }
-
 #credit:checked~.services__slider-inner .services__slides {
-  transform: translate(-1570px);
+  transform: translate(-1356px);
 }
-
 
 /*Бренды*/
-
 .brends__logo {
   list-style: none;
   display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
 }
-
 .brends__logo img {
   filter: grayscale(1);
   opacity: 0.2;
 }
-
 .brends__logo img:hover {
   filter: none;
   opacity: 1;
 }
 
-
 /*О нас*/
-
 .about {
   display: flex;
 }
-
 .about-us h2 {
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
   color: black;
   font-size: 47px;
 }
-
 .about-us {
   width: 462px;
 }
-
 .about-us p {
   letter-spacing: 0;
 }
-
 .contacts {
   width: 560px;
   margin-left: 139px;
 }
-
 .contacts h2 {
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
   color: black;
   font-size: 47px;
 }
-
 .contacts p {
   letter-spacing: 0;
 }
 
-
 /* Footer */
-
 footer {
   background-color: #464646;
   width: 100%;
   height: 323px;
 }
-
 .footer {
   display: flex;
   flex-wrap: wrap;
 }
-
 .footer-contacts {
   width: 367px;
 }
-
 .footer-menu {
   float: left;
   width: 468px;
 }
-
 .footer-left {
   float: left;
   width: 325px;
 }
-
 .footer-logo a {
   display: block;
 }
-
 .footer-logo img {
   position: relative;
   top: 65px;
   width: 163px;
   height: 36px;
 }
-
 .footer-logo img:hover {
   opacity: 0.6;
 }
-
 .footer-logo img:active {
   opacity: 0.3;
 }
-
 .footer-adress {
   color: white;
   margin-top: 140px;
 }
-
 .footer-menu__services_list {
   list-style: none;
   display: flex;
@@ -789,46 +779,36 @@ footer {
   padding: 0;
   justify-content: center;
 }
-
 .footer-menu__services_list li {
   padding-right: 38px;
 }
-
 .footer-menu__services_list a {
   color: #fff;
 }
-
 .footer-menu__services_list a:hover {
   opacity: 0.6;
 }
-
 .footer-menu__services_list a:active {
   opacity: 0.3;
 }
-
 .footer-menu__social_list {
   list-style: none;
   display: flex;
   padding: 0;
   justify-content: center;
 }
-
 .footer-menu__social_list li {
   padding-right: 38px;
 }
-
 .social-btn {
   opacity: 0.3;
 }
-
 .social-btn:hover {
   opacity: 0.6;
 }
-
 .social-btn:active {
   opacity: 0.1;
 }
-
 .footer-menu__user_list {
   display: flex;
   list-style: none;
@@ -841,25 +821,19 @@ footer {
   height: 15px;
   padding: 0;
 }
-
 .footer-menu__user_list a {
   margin-left: 12px;
   color: #fff;
 }
-
 .footer-menu__user_list a:focus {
   opacity: 0.7;
 }
-
 .footer-menu__user_list a:hover {
   opacity: 0.3;
 }
 
-
 /*фильтр*/
 
-
 /*каталог*/
-
 
 /*пагинация*/
