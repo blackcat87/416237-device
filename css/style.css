@@ -554,6 +554,7 @@ ul {
   color: black;
   font-size: 18px;
   padding: 0;
+  justify-content: space-between;
 }
 
 .icon-navigation li {
@@ -570,6 +571,12 @@ ul {
   background-color: rgba(240, 197, 46, 0.5);
   width: 160px;
   height: 160px;
+  display:flex;
+  margin:auto;
+}
+
+.icon-menu-btn img{
+  margin:auto;
 }
 
 .icon-menu-btn:hover {
@@ -580,9 +587,8 @@ ul {
   background-color: rgba(240, 197, 46, 1);
 }
 
-.icon-menu-btn:active svg {
-  margin: auto;
-  opacity: 0.3;
+.icon-menu-btn:active img {
+    opacity: 0.3;
 }
 
 
