@@ -81,17 +81,27 @@ img {
 }
 
 .button {
+  width: 220px;
+  padding: 14px 25px;
   color: #000000;
   font-family: Gilroy;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  background-color: rgba(240, 197, 46, 1);
 }
 
-.button a:hover {}
+.button:hover {
+  background-color: rgba(240, 197, 46, 1);
+  padding: 14px 25px;
+}
 
-.button a:focus {}
+.button:active {
+  opacity: 0.3;
+  background-color: rgba(240, 197, 46, 1);
+  padding: 14px 25px;
+}
 
 .list ul {
   font-family: "Gilroy", sans-serif;
@@ -147,7 +157,6 @@ img {
 .search-icon {
   padding-right: 18px;
   padding-top: 16px;
-  height: 100px;
 }
 
 .search-input:focus~.search-icon {
@@ -202,7 +211,7 @@ img {
 .header-user-menu {
   display: flex;
   flex-wrap: wrap;
-      margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .header-user-navigation {
@@ -224,11 +233,11 @@ img {
   margin-left: 12px;
 }
 
-.header-user-navigation a:focus {
+.header-user-navigation a:hover {
   opacity: 0.6;
 }
 
-.header-user-navigation a:hover {
+.header-user-navigation a:active {
   opacity: 0.3;
 }
 
@@ -283,12 +292,12 @@ img {
   padding: 0;
 }
 
-.catalog-navigation a:active {
-  opacity: 0.3;
-}
-
 .catalog-navigation a:hover {
   opacity: 0.6;
+}
+
+.catalog-navigation a:active {
+  opacity: 0.3;
 }
 
 .catalog-item {
@@ -425,11 +434,11 @@ img {
 }
 
 .header-slider__button input[type=radio] {
- display: none;
+  display: none;
 }
 
 .header-slider__button_controls {
- position: absolute;
+  position: absolute;
   left: 998px;
   top: 214px;
 }
@@ -481,12 +490,12 @@ img {
   float: left;
   width: 1160px;
   height: 485px;
-      margin-top: -68px;
+  margin-top: -68px;
 }
 
 .header-slider__slides article p {
   margin-left: 599px;
-      margin-bottom: 50px;
+  margin-bottom: 50px;
   font-family: "Open Sans";
   font-size: 15px;
   font-weight: 300;
@@ -609,7 +618,7 @@ img {
 
 .services {
   width: 1160px;
-      margin: 86px auto 168px;
+  margin: 86px auto 168px;
 }
 
 .services__button {
@@ -632,7 +641,7 @@ img {
   width: 284px;
   border-right: 7px solid black;
   padding-left: 20px;
-      padding-top: 91px;
+  padding-top: 91px;
 }
 
 .services__slider-inner {
