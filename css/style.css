@@ -81,6 +81,7 @@ img {
   width: 1160px;
 }
 
+
 .button {
   color: #000000;
   font-family: Gilroy;
@@ -378,6 +379,8 @@ img {
   font-weight: 700;
   letter-spacing: 0.01em;
   color: #000000;
+  padding-top: 35px;
+  margin: 0;
 }
 
 .breadcrumbs {
@@ -390,6 +393,21 @@ img {
   font-size: 14px;
   font-weight: 300;
   line-height: 36px;
+  letter-spacing: 0.01em;
+  margin: 15px 0 40px;
+  padding: 0;
+}
+
+.breadcrumbs li {
+  margin-right: 18px;
+}
+
+.breadcrumbs li a:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs li a:active {
+  opacity: 0.1;
 }
 
 .breadcrumbs li::after {
@@ -399,39 +417,13 @@ img {
   width: 4px;
   height: 7px;
   display: inline-block;
+  margin-left: 15px;
+  vertical-align: middle;
 }
 
-.catalog-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-}
-
-.catalog-list h3 {
-  color: #000000;
-  font-family: Gilroy;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-}
-
-.catalog-item-price {
-  color: #464646;
-  font-family: Gilroy;
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 0.01em;
-}
-
-.add-to-сompare {
-  opacity: 0.5;
-  color: #000000;
-  font-family: "Open Sans";
-  font-size: 13px;
-  font-weight: 300;
-  line-height: 36px;
-  letter-spacing: 0.01em;
-  text-transform: none;
+.breadcrumbs li:last-child::after {
+  content: "";
+  background-image: none;
 }
 
 
@@ -734,14 +726,17 @@ img {
   width: 100%;
   min-height: 288px;
   background-color: #e5e5e5;
-      margin-top: 186px;
-  
+  margin-top: 186px;
 }
-.services-content {position: relative;}
+
+.services-content {
+  position: relative;
+}
+
 .services-slider {
   display: flex;
   position: absolute;
-  top:-50px;
+  top: -50px;
   left: 0;
 }
 
@@ -798,8 +793,8 @@ img {
   font-weight: 700;
   color: black;
   font-size: 47px;
-  margin:0; 
-   padding-left: 120px;
+  margin: 0;
+  padding-left: 120px;
 }
 
 .services-slide img {
@@ -813,7 +808,7 @@ img {
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-      padding-left: 120px;
+  padding-left: 120px;
 }
 
 
@@ -1180,6 +1175,161 @@ footer {
 
 
 /*фильтр*/
+
+.catalog-contetnt {
+  display: flex;
+  width: 1100px;
+}
+
+.catalog-filter {
+  width: 268px;
+}
+
+.filter-button {
+  margin-top: 40px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-shadow: inset 0 17px 0 0 #efefef, inset 0 -17px 0 0 #efefef;
+  border: 0;
+}
+
+.filter-button:hover {
+  box-shadow: none;
+}
+
+.catalog-product {
+  width: 832px;
+  margin-left: 95px;
+  padding: 0;
+}
+
+.catalog-menu {
+  list-style: none;
+  display: flex;
+  padding: 30px 0;
+  margin: 0;
+  height: 70px;
+  background-color: #ebebeb;
+
+
+}
+
+.catalog-menu-title {color: #000000;
+font-family: Gilroy;
+font-size: 16px;
+font-weight: 700;
+text-transform: uppercase;}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.cat-item {
+  width: 360px;
+  height: 440px;
+  margin-right: 40px;
+  margin-top: 70px;
+  position: relative;
+}
+
+.cat-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.catalog-item-image {
+  width: 360;
+  height: 380;
+  margin: 0;
+}
+
+.cat-item h3 {
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  min-height: 0.02em;
+  position: absolute;
+  left: 0;
+  top: 395px;
+  padding-right: 20px;
+  width: 300px
+}
+
+.catalog-item-price {
+  color: #464646;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  position: absolute;
+  right: 0;
+  top: 400px;
+}
+
+
+/*.active {
+  width: 360px;
+  height: 380px;
+  background-color: #eeeeee;
+  opacity: 0.7;
+}*/
+
+.catalog-item-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 380px;
+}
+
+.add-to-cart {
+  width: 200px;
+  margin: 170px auto 20px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-shadow: inset 0 17px 0 0 white, inset 0 -17px 0 0 white;
+}
+
+.add-to-cart:hover {
+  box-shadow: none;
+}
+
+.add-to-сompare {
+  display: block;
+  opacity: 0.5;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  text-align: center;
+}
+
+.add-to-сompare:hover {opacity: 1;}
+.add-to-сompare:active {opacity: 0.2;}
+
+.cat-item .flag-new {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-image: url('../img/flag-new.png');
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  z-index: 5;
+}
 
 
 /*каталог*/
