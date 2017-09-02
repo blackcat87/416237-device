@@ -79,9 +79,24 @@
       <section class="catalog-filter">
         <h2>Фильтр: </h2>
         <form class="filters" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
+          <fieldset >
             <legend>Стоимость</legend>
+           <!--<div class="slider-wrapper">
             <input type="range" min="0" max="10000" step="500" value="5000">
+            </div>-->
+
+            
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="10000"></label>
+                
           </fieldset>
 
           <fieldset>
@@ -133,15 +148,20 @@
 
       <section class="catalog-product">
         <h2 class="visually-hidden">Каталог товаров</h2>
-  
+  <div class="sorting-container">
           <ul class="catalog-menu ">
-            <li class="catalog-menu-title">Сортировка:</li>
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По популярности</a></li>
-            <li><button class="button-down"><img src="./img/svg/icon-down-dir.svg" alt="Стрелка вниз"></button></li>
-            <li><button class="button-up"><img src="./img/svg/icon-up-dir.svg" alt="Стрелка вверх"></button></li>
+            <li class="menu-item-title">Сортировка:</li>
+            <li class="menu-item sorting-active"><a href="#">По цене</a></li>
+            <li class="menu-item"><a href="#">По типу</a></li>
+            <li class="menu-item"><a href="#">По популярности</a></li>
           </ul>
+          <ul class="catalog-menu-btn">
+          
+            <li><button class="button-up"></button></li>
+            <li><button class="button-down sorting-active"></button></li>
+          </ul>
+       
+        </div>
       
 
         <ul class="catalog-list">
@@ -169,7 +189,8 @@
 
           </li>
 
-          <li class="cat-item flag-new">
+          <li class="cat-item">
+            <div class="flag-new"></div>
             <h3><a href="catalog-item.html">Селфи-палка «Следуй за мной»</a></h3>
             <p class="catalog-item-image"><a href="catalog-item.html"><img src="./img/item-4.jpg" alt="Товар " width="360" height="380"></a></p>
             <p class="catalog-item-price">4 900 руб.</p>
@@ -183,19 +204,19 @@
         <!--Пагинация на странице-->
         <section class="pagination">
           <h2 class="visually-hidden">Пагинация по каталогу</h2>
-          <button class="prev"><a href="#">Предыдущая</a></button>
+          <button class="prev"><a href="#">Назад</a></button>
 
           <!-- страницы -->
-          <ul>
-            <li><a href="#">1</a></li>
+          <ul class="pagination-items">
+            <li class="pagination-item"><a href="#">1</a></li>
 
             <!-- текущая страница -->
-            <li class="active"><a href="#">2</a></li>
+            <li class="pagination-item active-number"><a href="#">2</a></li>
 
             <!-- страницы -->
-            <li><a href="#">3</a></li>
-
-            <button class="next"><a href="#">Следующая</a></button>
+            <li class="pagination-item"><a href="#">3</a></li>
+          </ul>
+            <button class="next"><a href="#">Вперед</a></button>
         </section>
         <!--КОНЕЦ: Пагинация на странице-->
       </section>
