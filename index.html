@@ -14,10 +14,10 @@
 <body>
   <!--Шапка сайта-->
   <header class="header container">
-    <a class="header-logo" href="/index.html"><img src="./img/logo.png" width="164" height="36" alt="Интернет-магазин Device"></a>
+    <a class="header-logo" href="index.html"><img src="./img/logo.png" width="164" height="36" alt="Интернет-магазин Device"></a>
     <nav class="header-user-menu">
 
-      <form class="header-search" action="result.html" method="post" >
+      <form class="header-search" action="result.html" method="post">
 
         <input class="search-input" type="search" placeholder="Поиск по сайту" required>
         <input class="search-btn" type="submit" value="Найти">
@@ -220,13 +220,13 @@
           <input class="services-slide-3-btn" type="radio" id="credit" name="button">
 
           <div class="services-button">
-            <label  for="delivery">Доставка </label>
+            <label for="delivery">Доставка </label>
             <label for="warranty">Гарантия</label>
             <label for="credit">Кредит</label>
           </div>
 
 
-          <div class="services-slide delivery" >
+          <div class="services-slide delivery">
             <h3>Доставка </h3>
 
             <img src="./img/svg/delivery.svg" alt="Доставка" width="136" height="164">
@@ -235,7 +235,7 @@
             </p>
           </div>
 
-          <div class="services-slide warranty" >
+          <div class="services-slide warranty">
             <h3>Гарантия </h3>
             <img src="./img/svg/warranty.svg" alt="Гарантия" width="171" height="194">
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар,
@@ -355,20 +355,26 @@
   <!--Конец футера-->
 
   <!--Разметка формы обратной связи-->
-  <section class="modal modal-contact">
+
+
+  
+  <section class="modal modal-login modal-show">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-      <label>Ваше имя <input type="text" name="name" placeholder="Представьтесь, пожалуйста"></label>
-      <label>Ваш e-mail<input type="text" name="e-mail" placeholder="Для отправки ответа"></label>
-      <label>Текст письма <textarea name="text" rows="10" cols="100" placeholder="В свободной форме"></textarea></label>
-      <button class="button" type="submit">Отправить</button>
+      <label for="user-login">Ваше имя </label>
+      <input type="text" name="name" id="user-login" placeholder="Представьтесь, пожалуйста">
+      <label  for="user-email">Ваш e-mail</label>
+      <input type="text" name="e-mail" id="user-email" placeholder="Для отправки ответа">
+      <label  for="user-massage">Текст письма </label>
+      <textarea name="text" rows="10" cols="100" id="user-massage" placeholder="В свободной форме"></textarea>
+      <button class="modal-btn button" type="submit">Отправить</button>
     </form>
-    <span class="modal-close">x</span>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <span class="modal-close">x</span>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 </body>
 
