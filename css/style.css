@@ -1,4 +1,4 @@
-/*Gilroy*/
+
 
 @font-face {
   font-weight: 400;
@@ -15,7 +15,7 @@
 }
 
 
-/*Open Sans*/
+
 
 @font-face {
   font-weight: 300;
@@ -103,7 +103,7 @@ img {
 }
 
 
-/* Header */
+
 
 .header {
   background-color: rgba(247, 226, 150, 1);
@@ -374,9 +374,6 @@ img {
   padding: 22px 55px 0 3px;
 }
 
-
-/* Каталог */
-
 .page-title-catalog {
   font-family: "Gilroy", sans-serif;
   font-size: 47px;
@@ -434,9 +431,6 @@ img {
   background-image: none;
 }
 
-
-/*Слайдер в шапке*/
-
 .header-slider {
   position: relative;
   height: 576px;
@@ -491,9 +485,6 @@ img {
   left: 0;
   top: 38px;
 }
-
-
-/*.slide-title::after*/
 
 .slide-number {
   content: "";
@@ -649,9 +640,6 @@ img {
   letter-spacing: 0.01em;
 }
 
-
-/*Иконко-меню*/
-
 .icon-navigation {
   list-style: none;
   display: flex;
@@ -704,43 +692,50 @@ img {
   opacity: 0.3;
 }
 
-
-/*Слайдер Услуги*/
-
 .services {
   width: 100%;
-  min-height: 288px;
-  background-color: #e5e5e5;
-  margin-top: 186px;
-}
-
-.services-content {
-  position: relative;
+  margin-top: 85px;
+  background-image: linear-gradient(#e5e5e5 0%, #e5e5e5 100%);
+  background-repeat: no-repeat;
+  background-position: 0 100px;
+  padding-bottom: 70px;
 }
 
 .services-slider {
   display: flex;
-  position: absolute;
-  top: -50px;
-  left: 0;
+  min-height: 320px;
 }
 
 .services-slide {
   width: 875px;
+  display: none;
 }
 
 .services-slider input[type=radio] {
   display: none;
 }
 
-.warranty,
-.credit {
-  display: none;
+.services-slide-1-btn:checked~.services-button .services-label-delivery,
+.services-slide-2-btn:checked~.services-button .services-label-warranty,
+.services-slide-3-btn:checked~.services-button .services-label-credit {
+  color: #f7e184;
+  box-shadow: none;
+  background-color: #000000;
+  width: 278px;
+  background-image: none;
 }
+
+.services-slide-1-btn:checked~.delivery,
+.services-slide-2-btn:checked~.warranty,
+.services-slide-3-btn:checked~.credit {
+  display: block;
+}
+
+
 
 .services-button {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   color: #000;
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
@@ -749,6 +744,7 @@ img {
   letter-spacing: 0.2em;
   width: 284px;
   border-right: 7px solid black;
+  padding-top: 80px;
 }
 
 .services-button label {
@@ -758,6 +754,7 @@ img {
   padding: 11px 25px;
   background-color: transparent;
   background-image: linear-gradient(transparent 43%, rgba(240, 197, 46, 1) 43%, rgba(240, 197, 46, 1) 57%, transparent 57%);
+  margin-bottom: 25px;
 }
 
 .services-button label:hover {
@@ -780,12 +777,13 @@ img {
   font-size: 47px;
   margin: 0;
   padding-left: 120px;
+  padding-top: 70px;
 }
 
 .services-slide img {
   float: right;
-  margin-right: 50px;
-  margin-top: -50px;
+  margin-right: 65px;
+  margin-top: -40px;
 }
 
 .services-slide p {
@@ -793,32 +791,29 @@ img {
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-  padding-left: 120px;
+  padding-left: 117px;
+  margin: 0;
+  margin-top: 30px;
 }
 
-
-/*Бренды*/
-
-.brends__logo {
+.brends-logo {
   list-style: none;
   display: flex;
   padding: 0;
   margin: 0;
+  margin-top: 93px;
   justify-content: space-between;
 }
 
-.brends__logo img {
+.brends-logo img {
   filter: grayscale(1);
   opacity: 0.2;
 }
 
-.brends__logo img:hover {
+.brends-logo img:hover {
   filter: none;
   opacity: 1;
 }
-
-
-/*О нас*/
 
 .about {
   display: flex;
@@ -944,9 +939,6 @@ img {
   box-shadow: none;
 }
 
-
-/* Footer */
-
 footer {
   background-color: #464646;
   width: 100%;
@@ -1008,7 +1000,7 @@ footer {
   top: 98px;
 }
 
-.footer-menu__services_list {
+.footer-menu-services {
   list-style: none;
   display: flex;
   font-family: Gilroy;
@@ -1020,27 +1012,27 @@ footer {
   justify-content: center;
 }
 
-.footer-menu__services_list li {
+.footer-menu-services li {
   padding-left: 34px;
 }
 
-.footer-menu__services_list li:first-child {
+.footer-menu-services li:first-child {
   padding-left: 0;
 }
 
-.footer-menu__services_list a {
+.footer-menu-services a {
   color: #fff;
 }
 
-.footer-menu__services_list a:hover {
+.footer-menu-services a:hover {
   opacity: 0.6;
 }
 
-.footer-menu__services_list a:active {
+.footer-menu-services a:active {
   opacity: 0.3;
 }
 
-.footer-menu__social_list {
+.footer-menu-social {
   list-style: none;
   display: flex;
   padding-right: 65px;
@@ -1048,11 +1040,11 @@ footer {
   justify-content: center;
 }
 
-.footer-menu__social_list li {
+.footer-menu-social li {
   padding-left: 22px;
 }
 
-.footer-menu__social_list li:first-child {
+.footer-menu-social li:first-child {
   padding-left: 0;
 }
 
@@ -1068,7 +1060,7 @@ footer {
   opacity: 0.1;
 }
 
-.footer-menu__user_list {
+.footer-menu-user {
   display: flex;
   list-style: none;
   font-family: "Open Sans", sans-serif;
@@ -1081,7 +1073,7 @@ footer {
   margin: 59px 0 0 0;
 }
 
-.footer-menu__user_list a {
+.footer-menu-user a {
   color: #fff;
 }
 
@@ -1133,11 +1125,11 @@ footer {
   vertical-align: baseline;
 }
 
-.footer-menu__user_list a:hover {
+.footer-menu-user a:hover {
   opacity: 0.6;
 }
 
-.footer-menu__user_list a:active {
+.footer-menu-user a:active {
   opacity: 0.3;
 }
 
@@ -1160,9 +1152,6 @@ footer {
 .footer-copyright img:active {
   opacity: 0.3;
 }
-
-
-/*фильтр*/
 
 .catalog-content-wr {
   background-image: linear-gradient(to right, #efefef, #efefef 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1)), linear-gradient(to right, #dcdcdc, #dcdcdc 50%, #ebebeb 50%, #ebebeb);
@@ -1205,7 +1194,9 @@ footer {
   width: 200px;
 }
 
-fieldset {
+.fieldset-price,
+.fieldset-bluetooth,
+.fieldset-color {
   border: 0;
   padding: 0;
   margin: 0;
@@ -1311,8 +1302,6 @@ legend::before {
   margin-bottom: 2px;
 }
 
-
-}
 .filter-bluetooth {
   list-style: none;
   padding: 0;
@@ -1366,7 +1355,7 @@ legend::before {
 .filter-radio-checkbox {
   display: none;
 }
-.filter-button {
+.filter-btn {
   width: 200px;
   height: 40px;
   line-height: 40px;
@@ -1374,8 +1363,9 @@ legend::before {
   background-color: transparent;
   background-image: linear-gradient(transparent 43%, rgba(240, 197, 46, 1) 43%, rgba(240, 197, 46, 1) 57%, transparent 57%);
   border: 0;
+  outline: none;
 }
-.filter-button:hover {
+.filter-btn:hover {
   background-color: rgba(240, 197, 46, 1);
 }
 .catalog-product {
@@ -1560,9 +1550,9 @@ legend::before {
   z-index: 5;
 }
 
-/*каталог*/
 
-/*пагинация*/
+
+
 .pagination {
   display: flex;
   list-style: none;
@@ -1620,7 +1610,7 @@ legend::before {
   opacity: 1;
 }
 
-/*Модальные */
+
 .modal {
   position: fixed;
   top: 50%;
@@ -1633,7 +1623,7 @@ legend::before {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.modal-login {
+.modal-contact {
   width: 960px;
   height: 560px;
   padding: 95px 100px 78px;
@@ -1649,7 +1639,9 @@ legend::before {
 }
 .modal-error {
   -webkit-animation: shake .6s;
-  animation: shake .6s
+  animation: shake .6s;
+  background-color: #edb5b5;
+  opacity: 0.5;
 }
 .modal-close {
   position: absolute;
@@ -1693,7 +1685,6 @@ legend::before {
   width: 200px;
   height: 40px;
   line-height: 40px;
-  margin-top: 40px;
   text-align: center;
   background-color: transparent;
   background-image: linear-gradient(transparent 43%, rgba(240, 197, 46, 1) 43%, rgba(240, 197, 46, 1) 57%, transparent 57%);
@@ -1709,13 +1700,26 @@ legend::before {
   display: flex;
   flex-wrap: wrap;
 }
+.contact-form fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 38px;
+}
+.contact-form fieldset:first-child {
+  margin-right: auto;
+}
+.contact-form fieldset:first-child {
+  margin-right: auto;
+}
 .contact-form label {
-  margin-bottom: 40px;
+  margin-bottom: 12px;
   color: #000000;
   font-family: Gilroy;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
+  display: block;
 }
 .contact-form input[type=text] {
   box-sizing: border-box;
@@ -1726,7 +1730,8 @@ legend::before {
   border: 0;
   display: inline-block;
   width: 360px;
-  vertical-align: baseline
+  vertical-align: baseline;
+  font-size: 14px;
 }
 .contact-form textarea {
   box-sizing: border-box;
@@ -1735,6 +1740,8 @@ legend::before {
   padding: 18px 20px;
   background-color: #eaeaea;
   border: 0;
+  font-size: 14px;
+  opacity: 0.5;
 }
 .contact-form input[type=text]::-webkit-input-placeholder,
 .contact-form textarea::-webkit-input-placeholder {
@@ -1748,14 +1755,15 @@ legend::before {
 .contact-form input[type=text]::-webkit-input-placeholder:focus,
 .contact-form textarea::-webkit-input-placeholder:focus {
   opacity: 1;
+  color: #464646;
+}
+.contact-form input[type=text]:hover,
+.contact-form textarea:hover {
+  opacity: 0.8;
 }
 .contact-form input[type=text]:focus,
 .contact-form textarea:focus {
   background-color: white;
   border: 3px solid #f0c52e;
-  
-
-  
+  outline: none;
 }
-
-

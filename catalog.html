@@ -12,13 +12,10 @@
 </head>
 
 <body>
-  <!--Шапка сайта-->
   <header class="header container">
     <a class="header-logo" href="index.html"><img src="./img/logo.png" width="164" height="36" alt="Интернет-магазин Device"></a>
     <nav class="header-user-menu">
-
       <form class="header-search" action="result.html" method="post">
-
         <input class="search-input" type="search" placeholder="Поиск по сайту" required>
         <input class="search-btn" type="submit" value="Найти">
         <div class="search-icon">
@@ -28,63 +25,51 @@
           </svg>
         </div>
       </form>
-
-
       <ul class="header-user-navigation">
-        <li ><a class="login-link" href="login.html">Валентин Петухов</a></li>
-<li><a class="link-out" href="index.html">Выйти</a></li>
+        <li><a class="login-link" href="login.html">Валентин Петухов</a></li>
+        <li><a class="link-out" href="index.html">Выйти</a></li>
         <li><a class="compare" href="compare.html">Сравнить</a></li>
         <li><a class="cart" href="cart.html">Корзина</a></li>
       </ul>
     </nav>
     <nav class="main-menu">
       <ul class="catalog-navigation">
-        <li class="catalog-item"><a class="plus-icon" href="catalog.html"> Каталог товаров</a>
+        <li class="catalog-item"><a class="plus-icon" href="catalog.html">Каталог товаров</a>
           <div class="category">
             <ul class="category-1">
-              <li><a href="virtual-glasses.html"> Виртуальная реальность</a></li>
-              <li><a href="monopods-for-selfie.html"> Моноподы для селфи</a></li>
-              <li><a href="action-camera.html"> Экшн-камеры</a></li>
+              <li><a href="virtual-glasses.html">Виртуальная реальность</a></li>
+              <li><a href="monopods-for-selfie.html">Моноподы для селфи</a></li>
+              <li><a href="action-camera.html">Экшн-камеры</a></li>
             </ul>
             <ul class="category-2">
-              <li><a href="fitness-bracelets.html"> Фитнес-браслеты</a></li>
-              <li><a href="smart-watch.html"> Умные часы</a></li>
+              <li><a href="fitness-bracelets.html">Фитнес-браслеты</a></li>
+              <li><a href="smart-watch.html">Умные часы</a></li>
             </ul>
             <ul class="category-3">
-              <li><a href="quadrocopters.html"> Квадрокоптеры</a></li>
+              <li><a href="quadrocopters.html">Квадрокоптеры</a></li>
             </ul>
           </div>
         </li>
-        <li class="delivery-item"><a href="dostavka.html"> Доставка</a> </li>
-        <li class="warranty-item"><a href="garantiya.html"> Гарантия</a> </li>
-        <li class="contacts-item"><a href="contacts.html"> Контакты</a> </li>
+        <li class="delivery-item"><a href="delivery.html">Доставка</a></li>
+        <li class="warranty-item"><a href="warranty.html">Гарантия</a></li>
+        <li class="contacts-item"><a href="contacts.html">Контакты</a></li>
       </ul>
     </nav>
   </header>
-  <!--Конец шапки-->
-
-  <!--Блок основного контента-->
   <main>
-
-    <h1 class="page-title-catalog container">Моноподы для селфи </h1>
-    <!--Хлебные крошки-->
+    <h1 class="page-title-catalog container">Моноподы для селфи</h1>
     <ul class="breadcrumbs container">
       <li><a href="index.html">Главная</a></li>
       <li><a href="catalog.html">Каталог товаров</a></li>
       <li>Моноподы для селфи</li>
     </ul>
-    <!--Конец: Хлебные крошки-->
     <div class="catalog-content-wr">
       <div class="catalog-content container">
-        <!--Фильтр товаров слева-->
         <section class="catalog-filter">
-          <h2>Фильтр: </h2>
+          <h2>Фильтр:</h2>
           <form class="filters" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="fieldset-price">
               <legend>Стоимость</legend>
-
-
-
               <div class="range-controls">
                 <div class="scale">
                   <div class="bar"></div>
@@ -93,27 +78,26 @@
                 <div class="toggle toggle-max"></div>
               </div>
               <div class="price-controls">
-                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до<input name="max-price" type="text" value="5000"></label>
               </div>
             </fieldset>
-
-            <fieldset>
+            <fieldset class="fieldset-color">
               <legend>Цвет</legend>
               <ul class="filter-color">
-                <li >
+                <li>
                   <input class="  filter-input-checkbox" type="checkbox" name="black" id="black" checked>
                   <label class="checkbox-label" for="black">Черный</label>
                 </li>
-                <li >
+                <li>
                   <input class="  filter-input-checkbox" type="checkbox" name="white" id="white">
                   <label class="checkbox-label" for="white">Белый</label>
                 </li>
-                <li >
+                <li>
                   <input class="  filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>
                   <label class="checkbox-label" for="blue">Синий</label>
                 </li>
-                <li >
+                <li>
                   <input class=" filter-input-checkbox" type="checkbox" name="red" id="red" checked>
                   <label class="checkbox-label" for="red">Красный</label>
                 </li>
@@ -124,26 +108,24 @@
               </ul>
             </fieldset>
 
-            <fieldset>
-              <legend>Bluetooth </legend>
+            <fieldset class="fieldset-bluetooth">
+              <legend>Bluetooth</legend>
               <ul class="filter-bluetooth">
-                <li >
+                <li>
                   <input class="filter-radio-checkbox" type="radio" name="bluetooth" value="yes" id="yes" checked>
                   <label class="radio-label" for="yes">Есть</label>
                 </li>
-                <li >
+                <li>
                   <input class="filter-radio-checkbox" type="radio" name="bluetooth" value="no" id="no">
                   <label class="radio-label" for="yes">Нет</label>
                 </li>
               </ul>
             </fieldset>
-            <button class="filter-button button">Показать</button>
+            <button class="filter-btn button">Показать</button>
           </form>
 
         </section>
-        <!--КОНЕЦ: Фильтр товаров слева-->
 
-        <!--Каталог товаров-->
 
         <section class="catalog-product">
           <h2 class="visually-hidden">Каталог товаров</h2>
@@ -170,7 +152,7 @@
               <p class="catalog-item-price">500 руб.</p>
               <div class="catalog-item-button">
                 <a class="add-to-cart button" href="#">В корзину</a>
-                <a class="add-to-сompare" href="#">Добавить к сравнению </a>
+                <a class="add-to-сompare" href="#">Добавить к сравнению</a>
               </div>
 
             </li>
@@ -180,7 +162,7 @@
               <p class="catalog-item-price">1 500 руб.</p>
               <div class="catalog-item-button">
                 <a class="add-to-cart button" href="#">В корзину</a>
-                <a class="add-to-сompare" href="#">Добавить к сравнению </a>
+                <a class="add-to-сompare" href="#">Добавить к сравнению</a>
               </div>
 
             </li>
@@ -191,11 +173,10 @@
               <p class="catalog-item-price">2 500 руб.</p>
               <div class="catalog-item-button">
                 <a class="add-to-cart button" href="#">В корзину</a>
-                <a class="add-to-сompare" href="#">Добавить к сравнению </a>
+                <a class="add-to-сompare" href="#">Добавить к сравнению</a>
               </div>
 
             </li>
-
             <li class="cat-item">
               <div class="flag-new"></div>
               <h3><a href="catalog-item.html">Селфи-палка «Следуй за мной»</a></h3>
@@ -203,76 +184,59 @@
               <p class="catalog-item-price">4 900 руб.</p>
               <div class="catalog-item-button">
                 <a class="add-to-cart button" href="#">В корзину</a>
-                <a class="add-to-сompare" href="#">Добавить к сравнению </a>
+                <a class="add-to-сompare" href="#">Добавить к сравнению</a>
               </div>
-
             </li>
-
-
           </ul>
-          <!--КОНЕЦ: Каталог товаров-->
 
-          <!--Пагинация на странице-->
           <section class="pagination">
             <h2 class="visually-hidden">Пагинация по каталогу</h2>
             <a class="prev" href="#">Назад</a>
-
-            <!-- страницы -->
             <ul class="pagination-items">
               <li class="pagination-item">1</li>
-
-              <!-- текущая страница -->
               <li class="pagination-item active-number"><a href="#">2</a></li>
-
-              <!-- страницы -->
               <li class="pagination-item"><a href="#">3</a></li>
             </ul>
             <a class="next" href="#">Вперед</a>
           </section>
-          <!--КОНЕЦ: Пагинация на странице-->
         </section>
-        </div>
       </div>
+    </div>
   </main>
-
-
-  <!--Конец блока основного контента-->
-
-  <!--Футер-->
   <footer>
     <div class="footer container">
       <section class="footer-contacts">
         <h2 class="visually-hidden">Наш Адрес</h2>
         <a class="footer-logo" href="index.html"><img src="./img/logo-footer.png" width="163" height="36" alt="Интернет-магазин Device"></a>
         <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
-
-
       </section>
-
       <section class="footer-menu">
         <h2 class="visually-hidden">Наши услуги и контакты в соцсетях</h2>
-        <nav class="footer-menu__services">
-          <ul class="footer-menu__services_list">
-            <li><a href="dostavka.html"> Доставка</a> </li>
-            <li><a href="garantiya.html"> Гарантия</a> </li>
-            <li><a href="contacts.html"> Контакты</a> </li>
+        <nav>
+          <ul class="footer-menu-services">
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="warranty.html">Гарантия</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
           </ul>
-
         </nav>
-        <nav class="footer-menu__social">
-          <ul class="footer-menu__social_list">
-            <li><a href="http://facebook.com"><img class="social-btn" src="./img/svg/facebook.svg" alt="Facebook" width="32" height="32"> </a>              </li>
-            <li><a href="http://instagram.com"><img class="social-btn" src="./img/svg/instagram.svg" alt="Instagram" width="32" height="32"> </a>              </li>
-            <li><a href="http://twitter.com"><img class="social-btn" src="./img/svg/twitter.svg" alt="Twitter" width="32" height="32"> </a>              </li>
+        <nav>
+          <ul class="footer-menu-social">
+            <li>
+              <a href="http://facebook.com"><img class="social-btn" src="./img/svg/facebook.svg" alt="Facebook" width="32" height="32"></a>
+            </li>
+            <li>
+              <a href="http://instagram.com"><img class="social-btn" src="./img/svg/instagram.svg" alt="Instagram" width="32" height="32"></a>
+            </li>
+            <li>
+              <a href="http://twitter.com"><img class="social-btn" src="./img/svg/twitter.svg" alt="Twitter" width="32" height="32"></a>
+            </li>
           </ul>
-
         </nav>
       </section>
-
       <section class="footer-left">
         <h2 class="visually-hidden">Личный кабинет</h2>
-        <nav class="footer-menu__user">
-          <ul class="footer-menu__user_list">
+        <nav >
+          <ul class="footer-menu-user">
             <li><a class="login-link-footer" href="login.html">Войти</a></li>
             <li><a class="compare-footer" href="compare.html">Сравнить</a></li>
             <li><a class="cart-footer" href="cart.html">Корзина</a></li>
@@ -283,7 +247,6 @@
       </section>
     </div>
   </footer>
-  <!--Конец футера-->
 </body>
 
 </html>
