@@ -1,5 +1,3 @@
-
-
 @font-face {
   font-weight: 400;
   font-family: "Gilroy";
@@ -13,9 +11,6 @@
   font-style: normal;
   src: url("../fonts/gilroyextrabold.woff") format("woff"), url("../fonts/gilroyextrabold.woff2") format("woff2");
 }
-
-
-
 
 @font-face {
   font-weight: 300;
@@ -101,9 +96,6 @@ img {
   color: rgba(0, 0, 0, 0.3);
   background-color: rgba(240, 197, 46, 1);
 }
-
-
-
 
 .header {
   background-color: rgba(247, 226, 150, 1);
@@ -731,8 +723,6 @@ img {
   display: block;
 }
 
-
-
 .services-button {
   display: flex;
   flex-direction: column;
@@ -1307,6 +1297,7 @@ legend::before {
   padding: 0;
   margin: 0;
 }
+
 .checkbox-label::before {
   content: "";
   display: inline-block;
@@ -1317,6 +1308,7 @@ legend::before {
   vertical-align: text-bottom;
   margin-right: 11px;
 }
+
 .filter-input-checkbox:checked+.checkbox-label::before {
   content: "";
   display: inline-block;
@@ -1327,9 +1319,11 @@ legend::before {
   vertical-align: text-bottom;
   margin-right: 11px;
 }
+
 .filter-input-checkbox {
   display: none;
 }
+
 .radio-label::before {
   content: "";
   display: inline-block;
@@ -1340,6 +1334,7 @@ legend::before {
   vertical-align: text-bottom;
   margin-right: 13px;
 }
+
 .filter-radio-checkbox:checked+.radio-label::before {
   content: "";
   display: inline-block;
@@ -1352,9 +1347,11 @@ legend::before {
   vertical-align: text-bottom;
   margin-right: 13px;
 }
+
 .filter-radio-checkbox {
   display: none;
 }
+
 .filter-btn {
   width: 200px;
   height: 40px;
@@ -1365,27 +1362,32 @@ legend::before {
   border: 0;
   outline: none;
 }
+
 .filter-btn:hover {
   background-color: rgba(240, 197, 46, 1);
 }
+
 .catalog-product {
   width: 834px;
   padding: 0;
   min-height: 1285px;
   background-color: white;
 }
+
 .sorting-container {
   height: 70px;
   background-color: #ebebeb;
   position: relative;
   padding-left: 75px;
 }
+
 .catalog-menu {
   list-style: none;
   display: flex;
   padding: 25px 0;
   margin: 0;
 }
+
 .menu-item-title {
   color: #000000;
   font-family: Gilroy;
@@ -1395,6 +1397,7 @@ legend::before {
   letter-spacing: 0.2em;
   margin-right: 25px;
 }
+
 .menu-item {
   color: #000000;
   font-family: "Open Sans";
@@ -1404,10 +1407,12 @@ legend::before {
   margin-left: 30px;
   opacity: 0.3;
 }
+
 .catalog-menu li:first-child {
   margin-left: 0;
   opacity: 1;
 }
+
 .catalog-menu-btn {
   list-style: none;
   display: flex;
@@ -1416,11 +1421,13 @@ legend::before {
   right: 0;
   padding: 0;
 }
+
 .button-up,
 .button-down {
   border: 0;
   opacity: 0.2;
 }
+
 .button-down {
   background-image: url('../img/svg/icon-down-dir.svg');
   background-repeat: no-repeat;
@@ -1428,27 +1435,33 @@ legend::before {
   height: 10px;
   margin-left: 17px;
 }
+
 .button-up {
   background-image: url('../img/svg/icon-up-dir.svg');
   background-repeat: no-repeat;
   width: 11px;
   height: 10px;
 }
+
 .menu-item:hover {
   opacity: 0.6;
 }
+
 .button-down:hover,
 .button-up:hover {
   opacity: 0.4;
 }
+
 .menu-item:active,
 .button-down:active,
 .button-up:active {
   opacity: 1;
 }
+
 .sorting-active {
   opacity: 1;
 }
+
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
@@ -1457,6 +1470,7 @@ legend::before {
   padding-left: 74px;
   margin: 0 0 55px 0;
 }
+
 .cat-item {
   width: 360px;
   display: flex;
@@ -1465,15 +1479,18 @@ legend::before {
   margin-top: 68px;
   position: relative;
 }
+
 .cat-item:nth-child(2n) {
   margin-right: 0;
 }
+
 .catalog-item-image {
   width: 360;
   height: 380;
   margin-top: 0;
   margin-bottom: 25px;
 }
+
 .cat-item h3 {
   color: #000000;
   font-family: Gilroy;
@@ -1486,6 +1503,7 @@ legend::before {
   order: 2;
   vertical-align: top;
 }
+
 .catalog-item-price {
   color: #464646;
   font-family: Gilroy;
@@ -1498,6 +1516,7 @@ legend::before {
   margin: 0;
   vertical-align: top;
 }
+
 .catalog-item-button {
   position: absolute;
   top: 0;
@@ -1506,9 +1525,11 @@ legend::before {
   right: 0;
   display: none;
 }
+
 .cat-item:hover .catalog-item-button {
   display: block;
 }
+
 .add-to-cart {
   width: 200px;
   margin: 173px auto 5px;
@@ -1518,9 +1539,11 @@ legend::before {
   background-color: transparent;
   background-image: linear-gradient(transparent 43%, rgba(240, 197, 46, 1) 43%, rgba(240, 197, 46, 1) 57%, transparent 57%);
 }
+
 .add-to-cart:hover {
   background-color: rgba(240, 197, 46, 1);
 }
+
 .add-to-сompare {
   display: block;
   opacity: 0.5;
@@ -1533,12 +1556,15 @@ legend::before {
   text-transform: none;
   text-align: center;
 }
+
 .add-to-сompare:hover {
   opacity: 1;
 }
+
 .add-to-сompare:active {
   opacity: 0.2;
 }
+
 .flag-new {
   position: absolute;
   top: 27px;
@@ -1549,9 +1575,6 @@ legend::before {
   height: 60px;
   z-index: 5;
 }
-
-
-
 
 .pagination {
   display: flex;
@@ -1567,6 +1590,7 @@ legend::before {
   margin-bottom: 70px;
   margin-left: 75px;
 }
+
 .prev,
 .next {
   width: 125px;
@@ -1580,15 +1604,18 @@ legend::before {
   padding: 25px 30px;
   letter-spacing: 0.2em;
 }
+
 .prev:hover,
 .next:hover {
   background-color: #d9d9d9;
 }
+
 .prev:active,
 .next:active {
   background-color: #d9d9d9;
   color: rgba(0, 0, 0, 0.3);
 }
+
 .pagination-items {
   list-style: none;
   display: flex;
@@ -1596,20 +1623,61 @@ legend::before {
   width: 510px;
   justify-content: center;
 }
+
 .pagination-item {
   margin-right: 30px;
   opacity: 0.3;
 }
+
 .pagination-item:hover {
   opacity: 0.6;
 }
+
 .pagination-item:active {
   opacity: 1;
 }
+
 .active-number {
   opacity: 1;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 
 .modal {
   position: fixed;
@@ -1623,26 +1691,29 @@ legend::before {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
 .modal-contact {
   width: 960px;
   height: 560px;
   padding: 95px 100px 78px;
 }
+
 .modal-map {
   width: 960px;
   height: 560px;
 }
+
 .modal-show {
   display: block;
-  -webkit-animation: modal-open .6s ease-in-out;
-  animation: modal-open .6s ease-in-out
+  animation: bounce 0.6s;
 }
+
 .modal-error {
-  -webkit-animation: shake .6s;
-  animation: shake .6s;
+  animation: shake 0.6s;
   background-color: #edb5b5;
   opacity: 0.5;
 }
+
 .modal-close {
   position: absolute;
   top: 22px;
@@ -1658,6 +1729,7 @@ legend::before {
   cursor: pointer;
   opacity: 0.5;
 }
+
 .modal-close::before,
 .modal-close::after {
   content: "";
@@ -1668,19 +1740,24 @@ legend::before {
   height: 2px;
   background-color: white;
 }
+
 .modal-close::before {
   transform: rotate(45deg);
 }
+
 .modal-close::after {
   transform: rotate(-45deg);
 }
+
 .modal-close:hover {
   opacity: 1;
 }
+
 .modal-close:active,
 .modal-map .modal-close:active {
   opacity: 0.3;
 }
+
 .modal-btn {
   width: 200px;
   height: 40px;
@@ -1689,29 +1766,34 @@ legend::before {
   background-color: transparent;
   background-image: linear-gradient(transparent 43%, rgba(240, 197, 46, 1) 43%, rgba(240, 197, 46, 1) 57%, transparent 57%);
   border: 0;
-  outline: none;
 }
+
 .modal-btn:hover {
   background-color: rgba(240, 197, 46, 1);
 }
+
 .contact-form {
   font-size: 0;
   width: 760px;
   display: flex;
   flex-wrap: wrap;
 }
+
 .contact-form fieldset {
   border: 0;
   padding: 0;
   margin: 0;
   margin-bottom: 38px;
 }
+
 .contact-form fieldset:first-child {
   margin-right: auto;
 }
+
 .contact-form fieldset:first-child {
   margin-right: auto;
 }
+
 .contact-form label {
   margin-bottom: 12px;
   color: #000000;
@@ -1721,6 +1803,7 @@ legend::before {
   line-height: 18px;
   display: block;
 }
+
 .contact-form input[type=text] {
   box-sizing: border-box;
   width: 360px;
@@ -1733,6 +1816,7 @@ legend::before {
   vertical-align: baseline;
   font-size: 14px;
 }
+
 .contact-form textarea {
   box-sizing: border-box;
   width: 760px;
@@ -1743,6 +1827,7 @@ legend::before {
   font-size: 14px;
   opacity: 0.5;
 }
+
 .contact-form input[type=text]::-webkit-input-placeholder,
 .contact-form textarea::-webkit-input-placeholder {
   opacity: 0.4;
@@ -1752,15 +1837,18 @@ legend::before {
   font-weight: 400;
   line-height: 18px;
 }
+
 .contact-form input[type=text]::-webkit-input-placeholder:focus,
 .contact-form textarea::-webkit-input-placeholder:focus {
   opacity: 1;
   color: #464646;
 }
+
 .contact-form input[type=text]:hover,
 .contact-form textarea:hover {
   opacity: 0.8;
 }
+
 .contact-form input[type=text]:focus,
 .contact-form textarea:focus {
   background-color: white;
