@@ -8,20 +8,14 @@ var modalMap = document.querySelector(".modal-map");
 var buttonMap = document.querySelector(".map");
 var form = document.querySelector(".contact-form");
 
-var storage = localStorage.getItem("name-user");
+
 
 if (button) {
   button.addEventListener("click", function (event) {
     event.preventDefault();
     modalContact.classList.add("modal-show");
     nameUser.focus();
-    if (storage) {
-      nameUser.value = storage;
-      emailUser.focus();
-    } else {
-      nameUser.focus();
-    }
-  });
+   });
 }
 
 
