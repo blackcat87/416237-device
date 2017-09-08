@@ -1,12 +1,12 @@
 var button = document.querySelector(".contacts-btn");
 var modalContact = document.querySelector(".modal-contact");
 var closeContact = document.querySelector(".modal-contact .modal-close");
-var nameUser = modalContact.querySelector("[name=name-user]");
-var emailUser = modalContact.querySelector("[name=user-email]");
+var nameUser = modalContact.querySelector("[name=name_user]");
+var emailUser = modalContact.querySelector("[name=user_email]");
 var closeMap = document.querySelector(".modal-map .modal-close");
 var modalMap = document.querySelector(".modal-map");
 var buttonMap = document.querySelector(".map");
-var form = document.querySelector("form");
+var form = document.querySelector(".contact-form");
 
 var storage = localStorage.getItem("name-user");
 
@@ -26,11 +26,13 @@ if (button) {
 
 
 form.addEventListener("submit", function (event) {
-  if (!nameUser.value || !emailUser.value) {
+  if (!nameUser.value) {
     event.preventDefault();
-    modalContact.classList.add("modal-error");
-  } else {
-    localStorage.setItem("nameUser", nameUser.value);
+    nameUser.classList.add("modal-error");
+  }
+  if (!emailUser.value) {
+    event.preventDefault();
+    emailUser.classList.add("modal-error");
   }
 });
 
