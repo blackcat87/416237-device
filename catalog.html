@@ -8,12 +8,12 @@
   />
   <meta name="keywords" content="HTMLAcademy" />
   <link href="./css/normalize.css" rel="stylesheet">
-  <link href="./css/style.min.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="catalog">
   <header class="header container">
-    <a class="header-logo" href="index.html"><img src="./img/logo.png" width="164" height="36" alt="Интернет-магазин Device"></a>
+    <a class="header-logo" href="index.html"><img src="./img/logo.png" width="164" height="36" alt="Интернет-магазин Device"><span class="visually-hidden">Интернет-магазин Device</span></a>
     <nav class="header-user-menu">
       <form class="header-search" action="result.html" method="post">
         <input class="search-input" type="search" placeholder="Поиск по сайту" required>
@@ -35,7 +35,7 @@
     <nav class="main-menu">
       <ul class="catalog-navigation">
         <li class="catalog-item"><a class="plus-icon" href="catalog.html">Каталог товаров</a>
-          <div class="category">
+          <div class="category" tabindex="0">
             <ul class="category-1">
               <li><a href="virtual-glasses.html">Виртуальная реальность</a></li>
               <li><a href="monopods-for-selfie.html">Моноподы для селфи</a></li>
@@ -86,24 +86,24 @@
               <legend>Цвет</legend>
               <ul class="filter-color">
                 <li>
-                  <input class="  filter-input-checkbox" type="checkbox" name="black" id="black" checked>
-                  <label class="checkbox-label" for="black">Черный</label>
+                  <input class="filter-input-checkbox" type="checkbox" name="black" id="black" checked>
+                  <label class="checkbox-label" for="black" tabindex="0">Черный</label>
                 </li>
                 <li>
-                  <input class="  filter-input-checkbox" type="checkbox" name="white" id="white">
-                  <label class="checkbox-label" for="white">Белый</label>
+                  <input class="filter-input-checkbox" type="checkbox" name="white" id="white">
+                  <label class="checkbox-label" for="white" tabindex="0">Белый</label>
                 </li>
                 <li>
-                  <input class="  filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>
-                  <label class="checkbox-label" for="blue">Синий</label>
+                  <input class="filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>
+                  <label class="checkbox-label" for="blue" tabindex="0">Синий</label>
                 </li>
                 <li>
-                  <input class=" filter-input-checkbox" type="checkbox" name="red" id="red" checked>
-                  <label class="checkbox-label" for="red">Красный</label>
+                  <input class="filter-input-checkbox" type="checkbox" name="red" id="red" checked>
+                  <label class="checkbox-label" for="red" tabindex="0">Красный</label>
                 </li>
                 <li>
-                  <input class=" filter-input-checkbox" type="checkbox" id="pink" name="pink">
-                  <label class="checkbox-label" for="pink">Розовый</label>
+                  <input class="filter-input-checkbox" type="checkbox" id="pink" name="pink">
+                  <label class="checkbox-label" for="pink" tabindex="0">Розовый</label>
                 </li>
               </ul>
             </fieldset>
@@ -113,11 +113,11 @@
               <ul class="filter-bluetooth">
                 <li>
                   <input class="filter-radio-checkbox" type="radio" name="bluetooth" value="yes" id="yes" checked>
-                  <label class="radio-label" for="yes">Есть</label>
+                  <label class="radio-label" for="yes" tabindex="0">Есть</label>
                 </li>
                 <li>
                   <input class="filter-radio-checkbox" type="radio" name="bluetooth" value="no" id="no">
-                  <label class="radio-label" for="no">Нет</label>
+                  <label class="radio-label" for="no" tabindex="0">Нет</label>
                 </li>
               </ul>
             </fieldset>
@@ -156,12 +156,12 @@
 
             </li>
             <li class="cat-item">
-              <h3><a href="catalog-item.html">Профессиональная селфи-палка</a></h3>
+              <h3><a href="catalog-item.html">Профессиональная селфи&#8209;палка</a></h3>
               <p class="catalog-item-image"><a href="catalog-item.html"><img src="./img/item-2.jpg" alt="Профессиональная селфи-палка " width="360" height="380"></a></p>
               <p class="catalog-item-price">1 500 руб.</p>
               <div class="catalog-item-button">
                 <a class="add-to-cart button" href="#">В корзину</a>
-                <a class="add-to-сompare" href="#">Добавить к сравнению</a>
+                <a class="add-to-сompare" href="#">Добавить к сравнению</a>s
               </div>
 
             </li>
@@ -192,7 +192,7 @@
             <h2 class="visually-hidden">Пагинация по каталогу</h2>
             <a class="prev" href="#">Назад</a>
             <ul class="pagination-items">
-              <li class="pagination-item">1</li>
+              <li class="pagination-item"><a href="#">1</a></li>
               <li class="pagination-item active-number"><a href="#">2</a></li>
               <li class="pagination-item"><a href="#">3</a></li>
             </ul>
@@ -206,7 +206,7 @@
     <div class="footer container">
       <section class="footer-contacts">
         <h2 class="visually-hidden">Наш Адрес</h2>
-        <a class="footer-logo" href="index.html"><img src="./img/logo-footer.png" width="163" height="36" alt="Интернет-магазин Device"></a>
+        <a class="footer-logo" href="index.html"><img src="./img/logo-footer.png" width="163" height="36" alt="Интернет-магазин Device"><span class="visually-hidden">Интернет-магазин Device</span></a>
         <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
       </section>
       <section class="footer-menu">
@@ -221,20 +221,21 @@
         <nav>
           <ul class="footer-menu-social">
             <li>
-              <a href="http://facebook.com"><img class="social-btn" src="./img/svg/facebook.svg" alt="Facebook" width="32" height="32"></a>
+              <a href="http://facebook.com"><img class="social-btn" src="./img/svg/facebook.svg" alt="Facebook" width="32" height="32"><span class="visually-hidden">Facebook</span></a>
             </li>
             <li>
-              <a href="http://instagram.com"><img class="social-btn" src="./img/svg/instagram.svg" alt="Instagram" width="32" height="32"></a>
+              <a href="http://instagram.com"><img class="social-btn" src="./img/svg/instagram.svg" alt="Instagram" width="32" height="32"><span class="visually-hidden">Instagram</span></a>
             </li>
             <li>
-              <a href="http://twitter.com"><img class="social-btn" src="./img/svg/twitter.svg" alt="Twitter" width="32" height="32"></a>
+              <a href="http://twitter.com"><img class="social-btn" src="./img/svg/twitter.svg" alt="Twitter" width="32" height="32"><span class="visually-hidden">Twitter</span></a>
             </li>
           </ul>
+
         </nav>
       </section>
       <section class="footer-left">
         <h2 class="visually-hidden">Личный кабинет</h2>
-        <nav >
+        <nav>
           <ul class="footer-menu-user">
             <li><a class="login-link-footer" href="login.html">Войти</a></li>
             <li><a class="compare-footer" href="compare.html">Сравнить</a></li>
@@ -242,7 +243,7 @@
           </ul>
         </nav>
         <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
-        <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/svg/copyright.svg" width="27" height="35" alt="copyright"></a>
+        <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/svg/copyright.svg" width="27" height="35" alt="copyright"><span class="visually-hidden">Лого HTMLAcademy</span></a>
       </section>
     </div>
   </footer>

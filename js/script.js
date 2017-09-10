@@ -3,6 +3,7 @@ var modalContact = document.querySelector(".modal-contact");
 var closeContact = document.querySelector(".modal-contact .modal-close");
 var nameUser = modalContact.querySelector("[name=name_user]");
 var emailUser = modalContact.querySelector("[name=user_email]");
+var message = modalContact.querySelector("[name=user_message]");
 var closeMap = document.querySelector(".modal-map .modal-close");
 var modalMap = document.querySelector(".modal-map");
 var buttonMap = document.querySelector(".map");
@@ -27,6 +28,10 @@ form.addEventListener("submit", function (event) {
   if (!emailUser.value) {
     event.preventDefault();
     emailUser.classList.add("modal-error");
+  }
+  if (!message.value) {
+    event.preventDefault();
+    message.classList.add("modal-error");
   }
 });
 
