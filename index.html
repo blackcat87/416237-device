@@ -7,8 +7,8 @@
   <meta name="description" content="Главная страница сайта Device. Подготовлена в рамках интенсивного курса Базовый HTML и CSS"
   />
   <meta name="keywords" content="HTMLAcademy" />
-  <link href="./css/normalize.css" rel="stylesheet">
-  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/normalize.min.css" rel="stylesheet">
+  <link href="./css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
     <nav class="main-menu">
       <ul class="catalog-navigation">
         <li class="catalog-item"><a class="plus-icon" href="catalog.html">Каталог товаров</a>
-          <div class="category" tabindex="0"> 
+          <div class="category" tabindex="0">
             <ul class="category-1">
               <li><a href="virtual-glasses.html">Виртуальная реальность</a></li>
               <li><a href="monopods-for-selfie.html">Моноподы для селфи</a></li>
@@ -137,38 +137,37 @@
         <li>
           <a href="virtual-glasses.html">
             <div class="icon-menu-btn">
-              <img src="./img/svg/virtual-glasses.svg" alt="Товары в разделе Виртуальная реальность" width="97" height="55">
+              <div class="icon-virtual-glasses"></div>
             </div>Виртуальная реальность</a>
         </li>
         <li>
           <a href="monopods-for-selfie.html">
             <div class="icon-menu-btn">
-              <img class="icon-monopod" src="./img/svg/monopods-for-selfie.svg" alt="Товары в разделе Моноподы для селфи" width="86" height="117">
+              <div class="icon-monopod"></div>
             </div>Моноподы<br>для селфи</a>
         </li>
         <li>
           <a href="action-camera.html">
             <div class="icon-menu-btn">
-              <img class="icon-action-camera" src="./img/svg/action-camera.svg" alt="Товары в разделе Экшн-камеры" width="71" height="87">
+              <div class="icon-action-camera"></div>
             </div>Экшн-камеры</a>
         </li>
         <li>
           <a href="fitness-bracelets.html">
             <div class="icon-menu-btn">
-              <img class="icon-fitness-bracelets" src="./img/svg/fitness-bracelets.svg" alt="Товары в разделе Фитнес-браслеты" width="107"
-                height="65">
+              <div class="icon-fitness-bracelets"></div>
             </div>Фитнес-браслеты</a>
         </li>
         <li>
           <a href="smart-watch.html">
             <div class="icon-menu-btn">
-              <img class="icon-smart-watch" src="./img/svg/smart-watch.svg" alt="Товары в разделе Умные часы" width="56" height="98">
+              <div class="icon-smart-watch"></div>
             </div>Умные часы</a>
         </li>
         <li>
           <a href="quadrocopters.html">
             <div class="icon-menu-btn">
-              <img class="icon-quadrocopters" src="./img/svg/quadrocopters.svg" alt="Товары в разделе Квадрокоптеры" width="132" height="69">
+              <div class="icon-quadrocopters"></div>
             </div>Квадрокоптеры</a>
         </li>
       </ul>
@@ -209,10 +208,14 @@
     <section class="brends container">
       <h2 class="visually-hidden">Наши бренды</h2>
       <ul class="brends-logo">
-        <li class="brends-logo-item"><img class="img-grey" src="./img/logo-dgi.png" alt="Логотип DJI" width="260" height="100"><img class="img-color" src="./img/logo-dgi-color.png" alt="Логотип DJI" width="260" height="100"></li>
-        <li class="brends-logo-item"><img class="img-grey" src="./img/logo-sp-gadgets.png" alt="Логотип SP Gadgets" width="260" height="100"><img class="img-color" src="./img/logo-sp-gadgets-color.png" alt="Логотип SP Gadgets" width="260" height="100"></li>
-        <li class="brends-logo-item"><img class="img-grey" src="./img/logo-gopro.png" alt="Логотип GoPro" width="260" height="100"><img class="img-color" src="./img/logo-gopro-color.png" alt="Логотип GoPro" width="260" height="100"></li>
-        <li class="brends-logo-item"><img class="img-grey" src="./img/logo-vive.png" alt="Логотип Vive" width="260" height="100"><img class="img-color" src="./img/logo-vive-color.png" alt="Логотип Vive" width="260" height="100"></li>
+        <li class="brends-logo-item"><img class="img-grey" src="./img/logo-dgi.png" alt="Логотип DJI" width="260" height="100"><img class="img-color"
+            src="./img/logo-dgi-color.png" alt="Логотип DJI" width="260" height="100"></li>
+        <li class="brends-logo-item"><img class="img-grey" src="./img/logo-sp-gadgets.png" alt="Логотип SP Gadgets" width="260" height="100"><img class="img-color"
+            src="./img/logo-sp-gadgets-color.png" alt="Логотип SP Gadgets" width="260" height="100"></li>
+        <li class="brends-logo-item"><img class="img-grey" src="./img/logo-gopro.png" alt="Логотип GoPro" width="260" height="100"><img class="img-color"
+            src="./img/logo-gopro-color.png" alt="Логотип GoPro" width="260" height="100"></li>
+        <li class="brends-logo-item"><img class="img-grey" src="./img/logo-vive.png" alt="Логотип Vive" width="260" height="100"><img class="img-color"
+            src="./img/logo-vive-color.png" alt="Логотип Vive" width="260" height="100"></li>
       </ul>
     </section>
     <div class="about container">
@@ -263,13 +266,16 @@
         <nav>
           <ul class="footer-menu-social">
             <li>
-              <a href="http://facebook.com"><img class="social-btn" src="./img/svg/facebook.svg" alt="Facebook" width="32" height="32"><span class="visually-hidden">Facebook</span></a>
+              <a class="social-btn facebook" href="http://facebook.com">
+                <span class="visually-hidden">Facebook</span></a>
             </li>
             <li>
-              <a href="http://instagram.com"><img class="social-btn" src="./img/svg/instagram.svg" alt="Instagram" width="32" height="32"><span class="visually-hidden">Instagram</span></a>
+              <a class="social-btn instagram" href="http://instagram.com">
+                <span class="visually-hidden">Instagram</span></a>
             </li>
             <li>
-              <a href="http://twitter.com"><img class="social-btn" src="./img/svg/twitter.svg" alt="Twitter" width="32" height="32"><span class="visually-hidden">Twitter</span></a>
+              <a class="social-btn twitter" href="http://twitter.com">
+                <span class="visually-hidden">Twitter</span></a>
             </li>
           </ul>
 
@@ -285,7 +291,7 @@
           </ul>
         </nav>
         <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
-        <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/svg/copyright.svg" width="27" height="35" alt="copyright"><span class="visually-hidden">Лого HTMLAcademy</span></a>
+        <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">Лого HTMLAcademy</span></a>
       </section>
     </div>
   </footer>
@@ -311,7 +317,7 @@
       width="960" height="560" style="border:0" allowfullscreen></iframe>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
-  <script src="./js/script.js"></script>
+  <script src="./js/script.min.js"></script>
 </body>
 
 </html>

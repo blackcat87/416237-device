@@ -7,8 +7,8 @@
   <meta name="description" content="Главная страница сайта Device. Подготовлена в рамках интенсивного курса Базовый HTML и CSS"
   />
   <meta name="keywords" content="HTMLAcademy" />
-  <link href="./css/normalize.css" rel="stylesheet">
-  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/normalize.min.css" rel="stylesheet">
+  <link href="./css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="catalog">
@@ -26,8 +26,8 @@
         </div>
       </form>
       <ul class="header-user-navigation">
-        <li  class="user-login"><a class="login-link" href="login.html">Валентин Петухов</a><a class="link-out" href="index.html">Выйти</a></li>
-       
+        <li class="user-login"><a class="login-link" href="login.html">Валентин Петухов</a><a class="link-out" href="index.html">Выйти</a></li>
+
         <li><a class="compare" href="compare.html">Сравнить</a></li>
         <li><a class="cart" href="cart.html">Корзина</a></li>
       </ul>
@@ -221,13 +221,16 @@
         <nav>
           <ul class="footer-menu-social">
             <li>
-              <a href="http://facebook.com"><img class="social-btn" src="./img/svg/facebook.svg" alt="Facebook" width="32" height="32"><span class="visually-hidden">Facebook</span></a>
+              <a class="social-btn facebook" href="http://facebook.com">
+                <span class="visually-hidden">Facebook</span></a>
             </li>
             <li>
-              <a href="http://instagram.com"><img class="social-btn" src="./img/svg/instagram.svg" alt="Instagram" width="32" height="32"><span class="visually-hidden">Instagram</span></a>
+              <a class="social-btn instagram" href="http://instagram.com">
+                <span class="visually-hidden">Instagram</span></a>
             </li>
             <li>
-              <a href="http://twitter.com"><img class="social-btn" src="./img/svg/twitter.svg" alt="Twitter" width="32" height="32"><span class="visually-hidden">Twitter</span></a>
+              <a class="social-btn twitter" href="http://twitter.com">
+                <span class="visually-hidden">Twitter</span></a>
             </li>
           </ul>
 
@@ -243,7 +246,7 @@
           </ul>
         </nav>
         <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
-        <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/svg/copyright.svg" width="27" height="35" alt="copyright"><span class="visually-hidden">Лого HTMLAcademy</span></a>
+        <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">Лого HTMLAcademy</span></a>
       </section>
     </div>
   </footer>
