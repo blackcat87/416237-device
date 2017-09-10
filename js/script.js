@@ -10,15 +10,13 @@ var buttonMap = document.querySelector(".map");
 var form = document.querySelector(".contact-form");
 
 
-
 if (button) {
   button.addEventListener("click", function (event) {
     event.preventDefault();
     modalContact.classList.add("modal-show");
     nameUser.focus();
-   });
+  });
 }
-
 
 form.addEventListener("submit", function (event) {
   if (!nameUser.value) {
@@ -34,7 +32,6 @@ form.addEventListener("submit", function (event) {
     message.classList.add("modal-error");
   }
 });
-
 
 if (closeContact) {
   closeContact.addEventListener("click", function (event) {
