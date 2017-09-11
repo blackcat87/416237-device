@@ -8,7 +8,16 @@ var closeMap = document.querySelector(".modal-map .modal-close");
 var modalMap = document.querySelector(".modal-map");
 var buttonMap = document.querySelector(".map");
 var form = document.querySelector(".contact-form");
+var catalog = document.querySelector(".category");
 
+catalog.addEventListener("focus", function (event){
+  catalog.classList.add("focus-within");
+
+}, true);
+
+catalog.addEventListener("blur", function (event){
+  catalog.classList.remove("focus-within");
+}, true);
 
 if (button) {
   button.addEventListener("click", function (event) {

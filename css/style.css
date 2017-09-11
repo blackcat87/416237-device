@@ -344,11 +344,6 @@ img {
 
 .catalog-item:hover .category,
 .catalog-item a:focus~.category {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  top: 20px;
   left: -58px;
   background-color: rgba(247, 226, 150, 1);
 }
@@ -377,6 +372,11 @@ img {
 }
 
 .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 20px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
@@ -386,7 +386,7 @@ img {
   letter-spacing: 0.01em;
   font-size: 15px;
   text-transform: none;
-  display: none;
+  left: -9999px;
   width: 1160px;
   min-height: 164px;
   padding: 0 0 0 58px;
@@ -394,8 +394,14 @@ img {
   z-index: 5;
 }
 
-.category:focus {
-  display: block;
+.category.focus-within {
+  left: -58px;
+  background-color: rgba(247, 226, 150, 1);
+}
+
+.category:focus-within {
+  left: -58px;
+  background-color: rgba(247, 226, 150, 1);
 }
 
 .category-1,
@@ -623,7 +629,7 @@ img {
 }
 
 .slide-1-btn:checked~.header-slider-buttons .slider-label-1 {
-  background-image: url('../img/svg/slider-button.svg')
+  background-image: url('../img/svg/slider-button.svg');
 }
 
 .slide-2-btn:checked~.header-slider-buttons .slider-label-2 {
@@ -1686,6 +1692,7 @@ legend::before {
 .button-down {
   border: 0;
   opacity: 0.2;
+  background-color: transparent;
 }
 
 .button-down {
